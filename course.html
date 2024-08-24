@@ -66,7 +66,7 @@
 
                 <div class="course-overall">
                   <div class="course-overall__left">
-                    <course-tag>Програмування</course-tag>
+                    <span class="tag tag--blue">Програмування</span>
                   </div>
                   <div class="course-overall__right">
                     <course-info>
@@ -136,7 +136,7 @@
 
                     <article>
                       <accordion-title>
-                        <span class="tag tag--passed">В процесі</span>
+                        <span class="tag tag--in-process">В процесі</span>
                         <h2>Урок 2. Назва другого уроку в два рядки для наглядності розташування тексту</h2>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
@@ -263,8 +263,12 @@
         articles.forEach((item) => {
           const title = item.querySelector("accordion-title");
           if (title) title.onclick = () => {
-            closeAll();
-            item.classList.add("opened");
+            if (item.classList.contains("opened")) {
+              closeAll();
+            } else {
+              closeAll();
+              item.classList.add("opened");
+            }
           }
         })
       } catch (error) {

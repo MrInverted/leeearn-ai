@@ -13,6 +13,7 @@
 
     @media (max-width: $forMobile) {
       grid-template-columns: 1fr;
+      gap: 48px;
     }
   }
 

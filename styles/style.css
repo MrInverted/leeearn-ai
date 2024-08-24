@@ -7,7 +7,8 @@
 }
 .breadcrumbs ul {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 0 8px;
 }
 .breadcrumbs li {
   text-wrap: nowrap;
@@ -54,6 +55,7 @@
 @media (max-width: 768px) {
   .course__grid {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 .button {
@@ -128,6 +130,11 @@
 .tag--new {
   color: #B42318;
   background-color: #FEF3F2;
+}
+.tag--blue {
+  font-size: 14px;
+  color: #175CD3;
+  background-color: #EFF8FF;
 }
 
 .course-label__image {
@@ -236,15 +243,6 @@
   display: flex;
   gap: 8px;
 }
-.course-overall course-tag {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #6941C6;
-  background-color: #EFF8FF;
-}
 .course-overall course-info {
   display: flex;
   align-items: center;
@@ -304,6 +302,7 @@
 }
 
 .course-accordion > p {
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -333,6 +332,10 @@
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+.course-accordion li {
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .course-accordion__column {
   display: flex;
@@ -413,7 +416,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   background-color: #F9F5FF;
-  background-image: url("./images/play.svg");
+  background-image: url("/images/play.svg");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;

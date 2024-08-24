@@ -1,6 +1,7 @@
 .course-accordion {
 
   >p {
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 12px;
   }
@@ -42,12 +43,16 @@
     transform: translateY(-50%);
   }
 
+  li {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+
   &__column {
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-
 
   accordion-title {
     display: block;

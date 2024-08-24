@@ -13,6 +13,7 @@
 
     @media (max-width: $forMobile) {
       grid-template-columns: 1fr;
+      gap: 0;
     }
   }
 
@@ -28,11 +29,13 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
+      border-radius: 8px;
     }
 
     iframe {
       width: 100%;
       height: 100%;
+      border-radius: 8px;
     }
 
     &:not(.active):after {

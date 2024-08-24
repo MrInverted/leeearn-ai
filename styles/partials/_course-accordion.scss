@@ -1,0 +1,86 @@
+.course-accordion {
+
+  >p {
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  article {
+    border: 1px solid #E4E7EC;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #F9F5FF;
+    }
+  }
+
+  article.opened {
+    accordion-body-wrapper {
+      grid-template-rows: 1fr;
+    }
+
+    accordion-title {
+      padding-bottom: 12px;
+    }
+
+    img {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+
+  accordion-title {
+    display: block;
+    padding: 20px 60px 20px 20px;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  accordion-body {
+    font-size: 16px;
+    color: #475467;
+
+    padding: 0 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  accordion-body-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.6s;
+  }
+
+  hidden-content {
+    display: block;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .tag {
+    float: left;
+  }
+}

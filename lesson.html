@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://osvitechstorage.blob.core.windows.net/public/styles/style.css">
+
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="lesson">
+          <div class="lesson__content">
+            <a class="back-button" href="">
+              <img src="./images/arrow-left-blue.svg" alt="">
+              <span>Про курс</span>
+            </a>
+
+            <div class="lesson__grid">
+              <div class="lesson__main">
+                <div class="lesson__video" data-videoid="NjDMzkRbSZI?si=IHF6FZ1dASNCU01J">
+                  <img src="./images/lesson-1.jpg" alt="">
+                </div>
+
+                <div class="lesson__tabs">
+                  <div class="lesson__tab active">Опис</div>
+                  <div class="lesson__tab">Уроки</div>
+                </div>
+
+                <div class="course-text">
+                  <h1>Урок 1. Знайомство з Roblox</h1>
+                  <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  <br>
+                  <p>Усього за 5 уроків ти:</p>
+                  <br>
+                  <ul>
+                    <li>дізнаєшся свій покроковий план на курс</li>
+                    <li>познайомишся з інтерфейсом Roblox Studio</li>
+                    <li>створиш власну гру</li>
+                    <li>отримаєш сертифікат про проходження міні-курсу</li>
+                  </ul>
+
+                  <div class="course-buttons">
+                    <button class="button button-gray" disabled>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8333 10.0001H4.16663M4.16663 10.0001L9.99996 15.8334M4.16663 10.0001L9.99996 4.16675" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span>Попередній урок</span>
+                    </button>
+
+                    <button class="button button-blue">
+                      <span>Наступний урок</span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16669 10.0001H15.8334M15.8334 10.0001L10 4.16675M15.8334 10.0001L10 15.8334" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="lesson__aside">
+                <div class="lesson__accordion">
+                  <article class="current">
+                    <span class="tag tag--passed">Пройдено</span>
+                    <h2>Урок 1. Знайомство з Roblox</h2>
+                  </article>
+
+                  <article>
+                    <span class="tag tag--in-process">В процесі</span>
+                    <h2>Урок 2. Назва другого уроку в два рядки для наглядності розташування тексту</h2>
+                  </article>
+
+                  <article>
+                    <h2>Урок 3. Назва третього уроку</h2>
+                  </article>
+
+                  <article>
+                    <h2>Урок 4. Назва четвертого уроку</h2>
+                  </article>
+
+                  <article>
+                    <h2>Урок 5. Назва п’ятого уроку</h2>
+                  </article>
+
+                  <article>
+                    <span class="tag tag--new">Новий</span>
+                    <h2>Бонусний урок</h2>
+                  </article>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const videoFrame = document.querySelector(".lesson__video");
+      const videoId = videoFrame.dataset.videoid;
+      let isCanBeActivated = true;
+
+      if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+        videoFrame.classList.add("active");
+        isCanBeActivated = false;
+        videoFrame.insertAdjacentHTML("afterbegin", `
+        <iframe
+          src="https://www.youtube.com/embed/${videoId}&autoplay=true"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      `);
+      }
+
+
+      const tabs = document.querySelectorAll(".lesson__tab");
+      const tabsContent = [
+        document.querySelector(".course-text"),
+        document.querySelector(".lesson__aside")
+      ]
+
+      const resetAll = () => {
+        tabs.forEach(item => item.classList.remove("active"));
+        tabsContent.forEach(item => {
+          item.classList.remove("mobile-shown");
+          item.classList.add("mobile-hidden");
+        });
+      }
+
+      if (tabs) tabs.forEach((item, index) => {
+        item.onclick = () => {
+          resetAll();
+          tabs[index].classList.add("active");
+          tabsContent[index].classList.replace("mobile-hidden", "mobile-shown");
+        }
+      })
+
+    </script>
+
+  </body>
+
+</html>

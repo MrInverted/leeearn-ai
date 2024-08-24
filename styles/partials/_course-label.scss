@@ -1,0 +1,108 @@
+.course-label {
+  &__image {
+    padding: 90px 20px;
+    border-radius: 8px;
+    background-color: #7EC0F1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    img:first-child {
+      position: absolute;
+      top: 26px;
+      left: 26px;
+    }
+
+    img:last-child {
+      position: absolute;
+      bottom: 26px;
+      right: 26px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: white;
+  }
+
+  course-description {
+    display: block;
+  }
+
+  course-title {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__progress {
+    font-size: 14px;
+    color: #475467;
+
+    padding: 24px 0;
+    border-bottom: 1px solid #E4E7EC;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+  }
+
+  course-progress {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+
+    @media (max-width: $forMobile) {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  course-status {
+    display: block;
+    flex-shrink: 0;
+    margin-right: 16px;
+
+    @media (max-width: $forMobile) {
+      grid-column: span 2;
+    }
+  }
+
+  course-lessons {
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+  course-progress-bar {
+    display: block;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #F2F4F7;
+  }
+
+  course-progress-fill {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #7F56D9;
+  }
+
+  course-percent {
+    color: #344054;
+    font-weight: 500;
+    margin-left: 12px;
+
+    &::after {
+      content: "%";
+    }
+  }
+
+  @media (max-width: $forMobile) {
+    button span {
+      display: none;
+    }
+  }
+}

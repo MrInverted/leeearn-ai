@@ -1,0 +1,13 @@
+$forDesktop : 1740px;
+$forTablet : 1260px;
+$forMobile : 768px;
+$minimum : 400px;
+
+@import "./partials/breadcrumbs";
+@import "./partials/course";
+@import "./partials/course-basics";
+@import "./partials/course-label";
+@import "./partials/course-overall";
+@import "./partials/course-text";
+@import "./partials/course-accordion";
+@import "./partials/lesson";

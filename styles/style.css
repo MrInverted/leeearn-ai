@@ -301,6 +301,52 @@
   margin-top: 32px;
 }
 
+.course-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 512px;
+  margin-top: 24px;
+}
+.course-materials__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px;
+  border-radius: 8px;
+  border: 1px solid #E4E7EC;
+}
+.course-materials__text {
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.course-materials file-title {
+  font-weight: 500;
+  color: #344054;
+}
+.course-materials file-size {
+  color: #475467;
+}
+.course-materials__status {
+  margin-left: auto;
+}
+
+.course-materials__item .--before {
+  display: block;
+}
+.course-materials__item .--after {
+  display: none;
+}
+
+.course-materials__item.downloaded .--before {
+  display: none;
+}
+.course-materials__item.downloaded .--after {
+  display: block;
+}
+
 .course-accordion > p {
   font-size: 18px;
   font-weight: 600;
@@ -309,7 +355,6 @@
 .course-accordion article {
   border: 1px solid #E4E7EC;
   border-radius: 8px;
-  cursor: pointer;
 }
 .course-accordion article:hover {
   background-color: #F9F5FF;
@@ -320,18 +365,12 @@
 .course-accordion article.opened accordion-title {
   padding-bottom: 12px;
 }
-.course-accordion article.opened img {
+.course-accordion article.opened accordion-title img {
   transform: translateY(-50%) rotate(180deg);
 }
 .course-accordion h2 {
   font-size: 16px;
   line-height: 1.5;
-}
-.course-accordion img {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
 }
 .course-accordion li {
   list-style-type: disc;
@@ -347,6 +386,13 @@
   padding: 20px 60px 20px 20px;
   position: relative;
   transition: 0.3s;
+  cursor: pointer;
+}
+.course-accordion accordion-title img {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .course-accordion accordion-body {
   font-size: 16px;
@@ -356,6 +402,19 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.course-accordion accordion-body a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6941C6;
+}
+.course-accordion accordion-body a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1.5px;
 }
 .course-accordion accordion-body-wrapper {
   display: grid;

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://osvitechstorage.blob.core.windows.net/public/styles/style.css">
+
+    <link rel="stylesheet" href="./styles-boolanga/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="lesson">
+          <div class="lesson__content">
+            <a class="back-button" href="">
+              <img src="./images/boolanga-arrow-left.svg" alt="">
+              <span>About course</span>
+            </a>
+
+            <div class="lesson__grid">
+              <div class="lesson__main">
+                <div class="lesson__video" data-videoid="NjDMzkRbSZI?si=IHF6FZ1dASNCU01J">
+                  <img src="./images/boolanga-video-preview.jpg" alt="">
+                </div>
+
+                <div class="lesson__tabs">
+                  <div class="lesson__tab active">Опис</div>
+                  <div class="lesson__tab">Уроки</div>
+                </div>
+
+                <div class="course-text">
+                  <h1>Part 1. How to get started</h1>
+                  <p>In this module, we will begin by discussing demand behavior, specifically steady state demand. Next, we will look at lead time and gather lead time information from several stakeholders. The module will conclude by demonstrating how to calculate the reorder point in Excel.</p>
+
+                  <div class="course-materials">
+                    <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item">
+                      <img src="./images/boolanga-file-upload-icon.svg" alt="">
+                      <div class="course-materials__text">
+                        <file-title>Homework.mp4</file-title>
+                        <file-size>16 MB</file-size>
+                      </div>
+                      <img class="course-materials__status --before" src="./images/boolanga-file-upload-button-before.svg" alt="">
+                      <img class="course-materials__status --after" src="./images/boolanga-file-upload-button-after.svg" alt="">
+                    </a>
+
+                    <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item downloaded">
+                      <img src="./images/boolanga-file-upload-icon.svg" alt="">
+                      <div class="course-materials__text">
+                        <file-title>Workbook.pdf</file-title>
+                        <file-size>200 KB</file-size>
+                      </div>
+                      <img class="course-materials__status --before" src="./images/boolanga-file-upload-button-before.svg" alt="">
+                      <img class="course-materials__status --after" src="./images/boolanga-file-upload-button-after.svg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="course-buttons">
+                    <button class="button button-outlined" disabled>
+                      <img src="./images/boolanga-arrow-up-left.svg" alt="">
+                      <span>Previous lesson</span>
+                    </button>
+
+                    <button class="button button-headphones">
+                      <img src="./images/boolanga-headphones.svg" alt="">
+                      <span>Next lesson</span>
+                      <img src="./images/boolanga-arrow-up-right.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <aside class="lesson__aside">
+                <div class="lesson__accordion">
+                  <a href="">
+                    <article class="current">
+                      <span class="tag tag--passed">Done</span>
+                      <h2>Part 1. How to get started</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <span class="tag tag--in-process">In process</span>
+                      <h2>Lesson 2. The title of the second lesson is in two lines for clarity of text arrangement</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <h2>Lesson 3. Name of the third lesson</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <h2>Lesson 4. Name of the fourth lesson</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <h2>Lesson 5. Name of the fifth lesson</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <span class="tag tag--new">New</span>
+                      <h2>Bonus lesson</h2>
+                    </article>
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      try {
+        const videoFrame = document.querySelector(".lesson__video");
+        const videoId = videoFrame.dataset.videoid;
+        let isCanBeActivated = true;
+
+        if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+          videoFrame.classList.add("active");
+          isCanBeActivated = false;
+          videoFrame.insertAdjacentHTML("afterbegin", `
+          <iframe
+            src="https://www.youtube.com/embed/${videoId}&autoplay=true"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+          `);
+        }
+      } catch (error) {
+        console.warn(error)
+      }
+
+
+      try {
+        const tabs = document.querySelectorAll(".lesson__tab");
+        const tabsContent = [
+          document.querySelector(".course-text"),
+          document.querySelector(".lesson__aside")
+        ]
+
+        const resetAll = () => {
+          tabs.forEach(item => item.classList.remove("active"));
+          tabsContent.forEach(item => {
+            item.classList.remove("mobile-shown");
+            item.classList.add("mobile-hidden");
+          });
+        }
+
+        if (tabs) tabs.forEach((item, index) => {
+          item.onclick = () => {
+            resetAll();
+            tabs[index].classList.add("active");
+            tabsContent[index].classList.replace("mobile-hidden", "mobile-shown");
+          }
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+    </script>
+
+  </body>
+
+</html>

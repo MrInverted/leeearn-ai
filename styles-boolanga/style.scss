@@ -1,0 +1,20 @@
+$forDesktop : 1740px;
+$forTablet : 1260px;
+$forMobile : 768px;
+$minimum : 400px;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+@import "./partials/breadcrumbs";
+@import "./partials/course";
+@import "./partials/course-basics";
+@import "./partials/course-label";
+@import "./partials/course-overall";
+@import "./partials/course-text";
+@import "./partials/course-materials";
+@import "./partials/course-accordion";
+@import "./partials/lesson";

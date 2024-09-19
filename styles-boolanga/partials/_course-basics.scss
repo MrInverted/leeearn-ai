@@ -1,0 +1,89 @@
+.button {
+  padding: 5px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  img {
+    transition: 0.3s;
+  }
+
+  &[disabled] {
+    cursor: unset;
+    opacity: 0.4;
+  }
+}
+
+.button-play {
+  font-size: 14px;
+  color: #6941C6;
+  background-color: #F9F5FF;
+
+  &:hover img {
+    transform: rotate(360deg);
+  }
+}
+
+.button-headphones {
+  color: white;
+  background-color: #151621;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+
+  padding-left: 15px;
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+}
+
+.button-outlined {
+  color: #151621;
+  background-color: unset;
+  border: 1px solid #151621;
+
+  padding-right: 15px;
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+}
+
+.tag {
+  padding: 2px 8px;
+  border-radius: 100px;
+  margin-right: 8px;
+  margin-top: 1px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-wrap: nowrap;
+
+  &--passed {
+    color: #027A48;
+    background-color: #ECFDF3;
+  }
+
+  &--in-process {
+    color: #B54708;
+    background-color: #FFFAEB;
+  }
+
+  &--new {
+    color: #B42318;
+    background-color: #FEF3F2;
+  }
+
+  &--blue {
+    font-size: 14px;
+    color: #175CD3;
+    background-color: #EFF8FF;
+  }
+}

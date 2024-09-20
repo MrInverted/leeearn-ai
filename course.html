@@ -12,8 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://osvitechstorage.blob.core.windows.net/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/style.css">
   </head>
@@ -27,7 +26,6 @@
               <ul>
                 <li><a href="">Усі курси</a></li>
                 <li><a href="">Міні-курс “Знайомство з Roblox”</a></li>
-                <li><a href="">Урок 1. Знайомство з Roblox</a></li>
               </ul>
             </div>
 
@@ -98,14 +96,22 @@
 
                   <div class="course-buttons">
                     <button class="button button-blue">
-                      <span>Наступний урок</span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.16669 10.0001H15.8334M15.8334 10.0001L10 4.16675M15.8334 10.0001L10 15.8334" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
+                      <span>Перейти до уроків</span>
+                      <img src="./images/arrow-right-white.svg" alt="">
                     </button>
+
+
+                    <!-- If the course is not bought -->
+                    <!-- <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button> -->
+                    <!-- If the course is not bought -->
                   </div>
                 </div>
               </div>
+
+
 
               <aside class="course__aside">
                 <div class="course-accordion">
@@ -113,14 +119,64 @@
                   <div class="course-accordion__column">
                     <article class="opened">
                       <accordion-title>
+                        <p>Урок 1</p>
                         <span class="tag tag--passed">Пройдено</span>
-                        <h2>Урок 1. Знайомство з Roblox</h2>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
 
                       <accordion-body-wrapper>
                         <hidden-content>
                           <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
+                            <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                            <p>На цьому уроці ти:</p>
+                            <ul>
+                              <li>дізнаєтесь свій покроковий план на курс </li>
+                              <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                              <li>створите свого першого персонажа</li>
+                              <li>отримаєте завдання на самостійне виконання</li>
+                            </ul>
+                            <a href="">
+                              <img src="./images/play-circle.svg" alt="">
+                              <span>Переглянути урок</span>
+                            </a>
+                          </accordion-body>
+                        </hidden-content>
+                      </accordion-body-wrapper>
+                    </article>
+
+                    <article class="test">
+                      <accordion-title>
+                        <p>Тест 1</p>
+                        <span class="tag tag--passed">Пройдено</span>
+                        <img src="./images/arrow-down.svg" alt="">
+                      </accordion-title>
+
+                      <accordion-body-wrapper>
+                        <hidden-content>
+                          <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
+
+                            <a href="">
+                              <img src="./images/rocket-for-accordion.svg" alt="">
+                              <span>Пройти тест</span>
+                            </a>
+                          </accordion-body>
+                        </hidden-content>
+                      </accordion-body-wrapper>
+                    </article>
+
+                    <article>
+                      <accordion-title>
+                        <p>Урок 2</p>
+                        <span class=" tag tag--in-process">В процесі</span>
+                        <img src="./images/arrow-down.svg" alt="">
+                      </accordion-title>
+
+                      <accordion-body-wrapper>
+                        <hidden-content>
+                          <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
                             <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
                             <p>На цьому уроці ти:</p>
                             <ul>
@@ -140,14 +196,14 @@
 
                     <article>
                       <accordion-title>
-                        <span class="tag tag--in-process">В процесі</span>
-                        <h2>Урок 2. Назва другого уроку в два рядки для наглядності розташування тексту</h2>
+                        <p>Урок 3</p>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
 
                       <accordion-body-wrapper>
                         <hidden-content>
                           <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
                             <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
                             <p>На цьому уроці ти:</p>
                             <ul>
@@ -167,13 +223,14 @@
 
                     <article>
                       <accordion-title>
-                        <h2>Урок 3. Назва третього уроку</h2>
+                        <p>Урок 4</p>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
 
                       <accordion-body-wrapper>
                         <hidden-content>
                           <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
                             <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
                             <p>На цьому уроці ти:</p>
                             <ul>
@@ -193,13 +250,14 @@
 
                     <article>
                       <accordion-title>
-                        <h2>Урок 4. Назва четвертого уроку</h2>
+                        <p>Урок 5</p>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
 
                       <accordion-body-wrapper>
                         <hidden-content>
                           <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
                             <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
                             <p>На цьому уроці ти:</p>
                             <ul>
@@ -219,40 +277,15 @@
 
                     <article>
                       <accordion-title>
-                        <h2>Урок 5. Назва п’ятого уроку</h2>
-                        <img src="./images/arrow-down.svg" alt="">
-                      </accordion-title>
-
-                      <accordion-body-wrapper>
-                        <hidden-content>
-                          <accordion-body>
-                            <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
-                            <p>На цьому уроці ти:</p>
-                            <ul>
-                              <li>дізнаєтесь свій покроковий план на курс </li>
-                              <li>познайомитесь з інтерфейсом Roblox Studio</li>
-                              <li>створите свого першого персонажа</li>
-                              <li>отримаєте завдання на самостійне виконання</li>
-                            </ul>
-                            <a href="">
-                              <img src="./images/play-circle.svg" alt="">
-                              <span>Переглянути урок</span>
-                            </a>
-                          </accordion-body>
-                        </hidden-content>
-                      </accordion-body-wrapper>
-                    </article>
-
-                    <article>
-                      <accordion-title>
+                        <p>Бонусний урок</p>
                         <span class="tag tag--new">Новий</span>
-                        <h2>Бонусний урок</h2>
                         <img src="./images/arrow-down.svg" alt="">
                       </accordion-title>
 
                       <accordion-body-wrapper>
                         <hidden-content>
                           <accordion-body>
+                            <h2>Знайомство з Roblox</h2>
                             <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
                             <p>На цьому уроці ти:</p>
                             <ul>
@@ -264,6 +297,27 @@
                             <a href="">
                               <img src="./images/play-circle.svg" alt="">
                               <span>Переглянути урок</span>
+                            </a>
+                          </accordion-body>
+                        </hidden-content>
+                      </accordion-body-wrapper>
+                    </article>
+
+                    <article class="test">
+                      <accordion-title>
+                        <p>Фінальний тест по курсу</p>
+                        <span class="tag tag--passed">Пройдено</span>
+                        <img src="./images/arrow-down.svg" alt="">
+                      </accordion-title>
+
+                      <accordion-body-wrapper>
+                        <hidden-content>
+                          <accordion-body>
+                            <h2>Урок 1. Знайомство з Roblox</h2>
+
+                            <a href="">
+                              <img src="./images/rocket-for-accordion.svg" alt="">
+                              <span>Пройти тест</span>
                             </a>
                           </accordion-body>
                         </hidden-content>
@@ -280,7 +334,7 @@
 
     <script>
       try {
-        const articles = document.querySelectorAll(".course-accordion article");
+        const articles = document.querySelectorAll(" .course-accordion article");
 
         const closeAll = () => articles.forEach(item => item.classList.remove("opened"));
 

@@ -3,7 +3,9 @@ $forTablet : 1260px;
 $forMobile : 768px;
 $minimum : 400px;
 
+@import "./partials/nullstyle";
 @import "./partials/breadcrumbs";
+
 @import "./partials/course";
 @import "./partials/course-basics";
 @import "./partials/course-label";
@@ -11,4 +13,43 @@ $minimum : 400px;
 @import "./partials/course-text";
 @import "./partials/course-materials";
 @import "./partials/course-accordion";
+
 @import "./partials/lesson";
+
+@import "./partials/courses";
+@import "./partials/courses-arrangers";
+@import "./partials/courses-item";
+@import "./partials/courses-not-found";
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #475467;
+
+  min-width: 400px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: #101828;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+hgroup {
+  margin-bottom: 24px;
+}
+
+section {
+  padding: 48px 0;
+}

@@ -105,4 +105,16 @@
       display: none;
     }
   }
+
+  .completed course-progress-fill {
+    background-color: #039855;
+  }
+
+  .completed course-status {
+    color: #475467;
+  }
+
+  .completed course-percent {
+    color: #344054;
+  }
 }

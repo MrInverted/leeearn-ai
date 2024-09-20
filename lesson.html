@@ -12,8 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://osvitechstorage.blob.core.windows.net/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/style.css">
   </head>
@@ -74,19 +73,20 @@
                     </a>
                   </div>
 
+                  <button class="button button-blue">
+                    <img src="./images/rocket.svg" alt="">
+                    <span>Пройти тест</span>
+                  </button>
+
                   <div class="course-buttons">
                     <button class="button button-gray" disabled>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.8333 10.0001H4.16663M4.16663 10.0001L9.99996 15.8334M4.16663 10.0001L9.99996 4.16675" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
+                      <img src="./images/arrow-left-black.svg" alt="">
                       <span>Попередній урок</span>
                     </button>
 
                     <button class="button button-blue">
                       <span>Наступний урок</span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.16669 10.0001H15.8334M15.8334 10.0001L10 4.16675M15.8334 10.0001L10 15.8334" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
+                      <img src="./images/arrow-right-white.svg" alt="">
                     </button>
                   </div>
                 </div>
@@ -94,32 +94,90 @@
 
               <aside class="lesson__aside">
                 <div class="lesson__accordion">
-                  <article class="current">
-                    <span class="tag tag--passed">Пройдено</span>
-                    <h2>Урок 1. Знайомство з Roblox</h2>
-                  </article>
+                  <a href="">
+                    <article class="current">
+                      <div class="lesson__accordion-row">
+                        <p>Урок 1</p>
+                        <span class="tag tag--passed">Пройдено</span>
+                      </div>
 
-                  <article>
-                    <span class="tag tag--in-process">В процесі</span>
-                    <h2>Урок 2. Назва другого уроку в два рядки для наглядності розташування тексту</h2>
-                  </article>
+                      <h2> Знайомство з Roblox</h2>
+                    </article>
+                  </a>
 
-                  <article>
-                    <h2>Урок 3. Назва третього уроку</h2>
-                  </article>
+                  <a href="">
+                    <article class="test">
+                      <div class="lesson__accordion-row">
+                        <p>Тест 1</p>
+                        <span class="tag tag--passed">Пройдено</span>
+                      </div>
 
-                  <article>
-                    <h2>Урок 4. Назва четвертого уроку</h2>
-                  </article>
+                      <h2> Знайомство з Roblox</h2>
+                    </article>
+                  </a>
 
-                  <article>
-                    <h2>Урок 5. Назва п’ятого уроку</h2>
-                  </article>
+                  <a href="">
+                    <article>
+                      <div class="lesson__accordion-row">
+                        <p>Урок 2</p>
+                        <span class="tag tag--in-process">В процесі</span>
+                      </div>
 
-                  <article>
-                    <span class="tag tag--new">Новий</span>
-                    <h2>Бонусний урок</h2>
-                  </article>
+                      <h2>Назва другого уроку в два рядки для наглядності розташування тексту</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <div class="lesson__accordion-row">
+                        <p>Урок 3</p>
+                      </div>
+
+                      <h2>Назва третього уроку</h2>
+                    </article>
+                  </a>
+
+
+                  <a href="">
+                    <article>
+                      <div class="lesson__accordion-row">
+                        <p>Урок 4</p>
+                      </div>
+
+                      <h2>Назва четвертого уроку</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <div class="lesson__accordion-row">
+                        <p>Урок 5</p>
+                      </div>
+
+                      <h2>Назва п’ятого уроку</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article>
+                      <div class="lesson__accordion-row">
+                        <p>Бонусний</p>
+                        <span class="tag tag--new">Новий</span>
+                      </div>
+
+                      <h2>Бонусний урок</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article class="test">
+                      <div class="lesson__accordion-row">
+                        <p>Фінальний тест</p>
+                      </div>
+
+                      <h2>Фінальний тест по курсу</h2>
+                    </article>
+                  </a>
                 </div>
               </aside>
             </div>

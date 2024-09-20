@@ -5,6 +5,7 @@
 
   max-width: 512px;
   margin-top: 24px;
+  margin-bottom: 24px;
 
   &__item {
     display: flex;
@@ -52,6 +53,8 @@
 }
 
 .course-materials__item.downloaded {
+  border-color: #9E77ED;
+
   .--before {
     display: none;
   }

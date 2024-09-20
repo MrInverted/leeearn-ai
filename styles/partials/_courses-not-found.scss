@@ -1,0 +1,28 @@
+.courses-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  img {
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #101828;
+    margin-bottom: 4px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #475467;
+  }
+}

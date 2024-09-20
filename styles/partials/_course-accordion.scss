@@ -13,9 +13,15 @@
     &:hover {
       background-color: #F9F5FF;
     }
+
+    &.test {
+      background-color: #FCFCFD;
+    }
   }
 
   article.opened {
+    border-color: #6941C6;
+
     accordion-body-wrapper {
       grid-template-rows: 1fr;
     }
@@ -25,12 +31,13 @@
     }
 
     accordion-title img {
-      transform: translateY(-50%) rotate(180deg);
+      transform: rotate(180deg);
     }
   }
 
   h2 {
     font-size: 16px;
+    font-weight: 600;
     line-height: 1.5;
   }
 
@@ -46,7 +53,8 @@
   }
 
   accordion-title {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 20px 60px 20px 20px;
     position: relative;
     transition: 0.3s;
@@ -56,9 +64,8 @@
 
   accordion-title img {
     position: absolute;
-    top: 50%;
+    top: 20px;
     right: 20px;
-    transform: translateY(-50%);
   }
 
   accordion-body {
@@ -102,6 +109,6 @@
   }
 
   .tag {
-    float: left;
+    margin-left: auto;
   }
 }

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="courses">
+          <div class="courses__content">
+            <hgroup>
+              <h1>Курси</h1>
+            </hgroup>
+
+            <div class="courses__tabs">
+              <course-tab class="course-tab-trigger active">Усі курси</course-tab>
+              <course-tab class="course-tab-trigger">Мої курси</course-tab>
+            </div>
+
+            <all-courses class="courses-content-panel active">
+              <div class="courses-arrangers">
+                <div class="courses-arrangers__selectors">
+                  <button class="button button-outline button-filter-trigger">
+                    <img src="./images/filter.svg" alt="">
+                    <span>Фільтр</span>
+                  </button>
+
+                  <button class="button button-sort button-sort-trigger">
+                    <span>Спочатку нові</span>
+                    <img src="./images/chevron-down.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__selected">
+                  <button class="button button-filter">
+                    <span>&lt;4 000 грн</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Програмування</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Дизайн</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Шкільні предмети</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Іноземні мови</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Шахи</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Софт скілс</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__filters">
+                  <div class="courses-arrangers__filters-block">
+                    <p>Ціна, грн</p>
+
+                    <!-- It is not ready yet -->
+                    <!-- 
+                      <div class="courses-arrangers__range">
+                      <input type="range" name="" min="0" max="100" value="0" id="low-range">
+                      <input type="range" name="" min="0" max="100" value="50" id="high-range">
+                      <range-track id="range-tack"></range-track>
+                    </div>
+
+                    <script>
+                      const lowRange = document.getElementById("low-range");
+                      const highRange = document.getElementById("high-range");
+                      const rangeTrack = document.getElementById("range-tack");
+
+                      const caclucaltePercent = (min, max, value) => {
+                        return Math.trunc(value / (max - min) * 100);
+                      }
+
+                      const processInputing = () => {
+                        lowRange.setAttribute('value', lowRange.value);
+                        highRange.setAttribute('value', highRange.value);
+
+                        const absMin = lowRange.min;
+                        const absMax = highRange.max;
+                        const currentMin = lowRange.value;
+                        const currentMax = highRange.value;
+
+                        const leftOffset = caclucaltePercent(absMin, absMax, currentMin);
+                        const width = caclucaltePercent(absMin, absMax, currentMax);
+
+                        rangeTrack.style.marginLeft = leftOffset + '%';
+                        rangeTrack.style.width = width - leftOffset + '%';
+                      }
+
+                      lowRange.oninput = processInputing;
+                      highRange.oninput = processInputing;
+                    </script> 
+                    -->
+                    <!-- It is not ready yet -->
+
+                    <label>
+                      <input type="radio" name="price" value="<4 000">
+                      <span>&lt;4 000 грн</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="price" value="4 000-7 000">
+                      <span>4 000-7 000 грн</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="price" value="7 000-10 000">
+                      <span>7 000-10 000 грн</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="price" value=">10 000">
+                      <span>&gt;10 000 грн</span>
+                    </label>
+                  </div>
+
+                  <div class="courses-arrangers__filters-block">
+                    <p>Напрямок</p>
+
+                    <label>
+                      <input type="checkbox" name="it" value="Програмування">
+                      <span>Програмування</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="design" value="Дизайн">
+                      <span>Дизайн</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="school" value="Шкільні предмети">
+                      <span>Шкільні предмети</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="languages" value="Іноземні мови">
+                      <span>Іноземні мови</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="chess" value="Шахи">
+                      <span>Шахи</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="soft" value="Софт скілс">
+                      <span>Софт скілс</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="courses-arrangers__sorters">
+                  <arranger-sorter>
+                    <span>За популярністю</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter class="active">
+                    <span>Спочатку нові</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Спочатку дешевші</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Спочатку дорожчі</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+                </div>
+              </div>
+
+              <!-- 
+              <div class="courses-not-found">
+                <img src="./images/featured-icon.svg" alt="">
+                <h2>Курси не знайдено</h2>
+                <p>
+                  За вашими фільтрами курсів не знайдено.
+                  <br>
+                  Спробуйте змінити фільтри та спробувати ще раз.
+                </p>
+              </div>
+               -->
+
+              <div class="courses__grid">
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom">
+                    <div class="courses-item__price">
+                      <span>Ціна:</span>
+                      <course-price>1 200/грн</course-price>
+                    </div>
+
+                    <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom">
+                    <div class="courses-item__price">
+                      <span>Ціна:</span>
+                      <course-price class="old">5 200/грн</course-price>
+                      <course-price class="new">1 200/грн</course-price>
+                    </div>
+
+                    <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                        <span class="blue">Design</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom">
+                    <div class="courses-item__price">
+                      <span>Ціна:</span>
+                      <course-price>1 200/грн</course-price>
+                    </div>
+
+                    <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview-2.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="rose">Англійська мова</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Курс “з 0 до А2”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom">
+                    <div class="courses-item__price">
+                      <span>Ціна:</span>
+                      <course-price>1 200/грн</course-price>
+                    </div>
+
+                    <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom">
+                    <div class="courses-item__price">
+                      <span>Ціна:</span>
+                      <course-price>Безкоштовно</course-price>
+                    </div>
+
+                    <button class="button button-blue">
+                      <img src="./images/shopping-cart.svg" alt="">
+                      <span>Купити курс</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+
+              <div class="courses__pagination">
+                <span>Сторінка 1 з 1</span>
+
+                <div class="courses__pagination-buttons">
+                  <button class="button button-gray" disabled>Назад</button>
+                  <button class="button button-gray" disabled>Далі</button>
+                  <!-- <button class="button button-blue">Далі</button> -->
+                </div>
+              </div>
+            </all-courses>
+
+            <my-courses class="courses-content-panel">
+              <div class="courses-arrangers">
+                <div class="courses-arrangers__selectors">
+                  <button class="button button-outline button-filter-trigger">
+                    <img src="./images/filter.svg" alt="">
+                    <span>Фільтр</span>
+                  </button>
+
+                  <button class="button button-sort button-sort-trigger">
+                    <span>Спочатку нові</span>
+                    <img src="./images/chevron-down.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__selected">
+                  <button class="button button-filter">
+                    <span>Нові</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>В процесі</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Завершені</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__filters">
+                  <div class="courses-arrangers__filters-block">
+                    <p>Статус</p>
+
+                    <label>
+                      <input type="checkbox" name="new" value="Нові">
+                      <span>Нові</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="in-process" value="В процесі">
+                      <span>В процесі</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="completed" value="Завершені">
+                      <span>Завершені</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="courses-arrangers__sorters">
+                  <arranger-sorter>
+                    <span>За популярністю</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter class="active">
+                    <span>Спочатку нові</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Спочатку дешевші</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Спочатку дорожчі</span>
+                    <img src="./images/check.svg" alt="">
+                  </arranger-sorter>
+                </div>
+              </div>
+
+              <!-- 
+              <div class="courses-not-found">
+                <img src="./images/featured-icon.svg" alt="">
+                <h2>Курси не знайдено</h2>
+                <p>
+                  За вашими фільтрами курсів не знайдено.
+                  <br>
+                  Спробуйте змінити фільтри та спробувати ще раз.
+                </p>
+              </div> 
+              -->
+
+
+              <div class="courses__grid">
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress>
+                      <course-status>
+                        <span>Пройдено:</span>
+                        <course-lessons>1 з 5 уроків</course-lessons>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 20%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>20</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress>
+                      <course-status>
+                        <span>Пройдено:</span>
+                        <course-lessons>0 з 5 уроків</course-lessons>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 1%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>0</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                        <span class="blue">Design</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Завершено</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview-2.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="rose">Англійська мова</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Курс “з 0 до А2”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Завершено</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Програмування</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 уроків</span>
+                      </div>
+                    </div>
+
+                    <h2>Міні-курс “Знайомство з Roblox”</h2>
+                    <course-beginning>20.09.2024 • Ім’я Викладача</course-beginning>
+                    <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Завершено</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+              </div>
+
+              <div class="courses__pagination">
+                <span>Сторінка 1 з 1</span>
+
+                <div class="courses__pagination-buttons">
+                  <button class="button button-gray" disabled>Назад</button>
+                  <button class="button button-gray" disabled>Далі</button>
+                  <!-- <button class="button button-blue">Далі</button> -->
+                </div>
+              </div>
+            </my-courses>
+          </div>
+        </section>
+      </main>
+    </div>
+
+
+    <script>
+      try {
+        const filterTriggers = document.querySelectorAll(".button-filter-trigger");
+        const filterMenus = document.querySelectorAll(".courses-arrangers__filters");
+
+        filterTriggers.forEach((item, index) => {
+          item.onclick = () => {
+            filterTriggers[index].classList.toggle("active");
+            filterMenus[index].classList.toggle("active");
+          }
+        })
+
+        const sortTriggers = document.querySelectorAll(".button-sort-trigger");
+        const sortMenus = document.querySelectorAll(".courses-arrangers__sorters");
+
+        sortTriggers.forEach((item, index) => {
+          item.onclick = () => {
+            sortTriggers[index].classList.toggle("active");
+            sortMenus[index].classList.toggle("active");
+          }
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+
+
+      try {
+        const tabs = document.querySelectorAll(".course-tab-trigger");
+        const panels = document.querySelectorAll(".courses-content-panel");
+
+        const closeAll = () => {
+          tabs.forEach(item => item.classList.remove("active"));
+          panels.forEach(item => item.classList.remove("active"));
+        }
+
+        tabs.forEach((item, index) => {
+          item.onclick = () => {
+            closeAll();
+            tabs[index].classList.add("active");
+            panels[index].classList.add("active");
+          }
+        })
+      } catch (error) {
+        console.warn(error);
+      }
+    </script>
+  </body>
+
+</html>

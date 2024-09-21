@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles-boolanga/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="courses">
+          <div class="courses__content">
+            <hgroup>
+              <h1>Courses</h1>
+            </hgroup>
+
+            <div class="courses__tabs">
+              <course-tab class="course-tab-trigger active">All courses</course-tab>
+              <course-tab class="course-tab-trigger">My courses</course-tab>
+            </div>
+
+            <all-courses class="courses-content-panel active">
+              <div class="courses-arrangers">
+                <div class="courses-arrangers__selectors">
+                  <button class="button button-outline button-filter-trigger">
+                    <img src="./images/filter.svg" alt="">
+                    <span>Filter</span>
+                  </button>
+
+                  <button class="button button-sort button-sort-trigger">
+                    <span>New ones first</span>
+                    <img src="./images/chevron-down.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__selected">
+                  <button class="button button-filter">
+                    <span>Programming</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Design</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>School lessons</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Foreign languages</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Chess</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Soft skills</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__filters">
+                  <div class="courses-arrangers__filters-block">
+                    <p>Direction</p>
+
+                    <label>
+                      <input type="checkbox" name="it" value="Programming">
+                      <span>Programming</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="design" value="Design">
+                      <span>Design</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="school" value="School lessons">
+                      <span>School lessons</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="languages" value="Foreign languages">
+                      <span>Foreign languages</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="chess" value="Chess">
+                      <span>Chess </span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="soft" value="Soft skills">
+                      <span>Soft skills</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="courses-arrangers__sorters">
+                  <arranger-sorter>
+                    <span>By popularity</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter class="active">
+                    <span>New ones first</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Cheap at first</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>First expensive</span>
+                  </arranger-sorter>
+                </div>
+              </div>
+
+              <!-- 
+              <div class="courses-not-found">
+                <h2>No courses found</h2>
+                <p>
+                  No courses were found for your filters.
+                  <br>
+                  Try changing the filters and try again.
+                </p>
+              </div>
+               -->
+
+              <div class="courses__grid">
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits. In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits. In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits. In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="rose">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Курс “з 0 до А2”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits. In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits. In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="courses__pagination">
+                <span>Page 1 of 1</span>
+
+                <div class="courses__pagination-buttons">
+                  <button class="button button-gray" disabled>Back</button>
+                  <button class="button button-gray" disabled>Next</button>
+                  <!-- <button class="button button-blue">Next</button> -->
+                </div>
+              </div>
+            </all-courses>
+
+            <my-courses class="courses-content-panel">
+              <div class="courses-arrangers">
+                <div class="courses-arrangers__selectors">
+                  <button class="button button-outline button-filter-trigger">
+                    <img src="./images/filter.svg" alt="">
+                    <span>Filter</span>
+                  </button>
+
+                  <button class="button button-sort button-sort-trigger">
+                    <span>New ones first</span>
+                    <img src="./images/chevron-down.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__selected">
+                  <button class="button button-filter">
+                    <span>New</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>In process</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+
+                  <button class="button button-filter">
+                    <span>Done</span>
+                    <img src="./images/cross-blue.svg" alt="">
+                  </button>
+                </div>
+
+                <div class="courses-arrangers__filters">
+                  <div class="courses-arrangers__filters-block">
+                    <p>Status</p>
+
+                    <label>
+                      <input type="checkbox" name="new" value="New">
+                      <span>New</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="in-process" value="In process">
+                      <span>In process</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" name="completed" value="Done">
+                      <span>Done</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="courses-arrangers__sorters">
+                  <arranger-sorter>
+                    <span>By popularity</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter class="active">
+                    <span>New ones first</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>Cheap at first</span>
+                  </arranger-sorter>
+
+                  <arranger-sorter>
+                    <span>First expensive</span>
+                  </arranger-sorter>
+                </div>
+              </div>
+
+              <!-- 
+              <div class="courses-not-found">
+                <h2>No courses found</h2>
+                <p>
+                  No courses were found for your filters.
+                  <br>
+                  Try changing the filters and try again.
+                </p>
+              </div>
+              -->
+
+              <div class="courses__grid">
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits.
+                      In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress>
+                      <course-status>
+                        <span>Completed:</span>
+                        <course-lessons>1 of 5 lessons</course-lessons>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 20%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>20</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits.
+                      In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress>
+                      <course-status>
+                        <span>Completed:</span>
+                        <course-lessons>0 of 5 lessons</course-lessons>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 1%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>0</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                        <span class="blue">Design</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits.
+                      In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Done</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="rose">English</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits.
+                      In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Done</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+
+                <article class="courses-item">
+                  <div class="courses-item__top">
+                    <img src="./images/boolanga-course-preview.jpg" alt="">
+                  </div>
+
+                  <div class="courses-item__middle">
+                    <div class="courses-item__info">
+                      <div class="courses-item__info-left">
+                        <span class="blue">Inventory</span>
+                      </div>
+                      <div class="courses-item__info-right">
+                        <img src="./images/monitor.svg" alt="">
+                        <span>5 lessons</span>
+                      </div>
+                    </div>
+
+                    <h2>Course “Inventory Management App Guide”</h2>
+                    <course-beginning>20.09.2024 • Teacher's name</course-beginning>
+                    <p>Inventory is a strategic asset for organizations. Effective inventory management can minimize a company’s expenses while significantly increasing its profits.
+                      In this course, we will look at how to use data science to manage inventory under uncertainty, how to set inventory levels based on customer service requirements, and how to calculate inventory for products with short sales cycles.</p>
+                  </div>
+
+                  <div class="courses-item__bottom course-label">
+                    <course-progress class="completed">
+                      <course-status>
+                        <span>Done</span>
+                      </course-status>
+
+                      <course-progress-bar>
+                        <course-progress-fill style="width: 100%"></course-progress-fill>
+                      </course-progress-bar>
+
+                      <course-percent>100</course-percent>
+                    </course-progress>
+                  </div>
+                </article>
+              </div>
+
+              <div class="courses__pagination">
+                <span>Page 1 of 1</span>
+
+                <div class="courses__pagination-buttons">
+                  <button class="button button-gray" disabled>Back</button>
+                  <button class="button button-gray" disabled>Next</button>
+                  <!-- <button class="button button-blue">Next</button> -->
+                </div>
+              </div>
+            </my-courses>
+          </div>
+        </section>
+      </main>
+    </div>
+
+
+    <script>
+      try {
+        const filterTriggers = document.querySelectorAll(".button-filter-trigger");
+        const filterMenus = document.querySelectorAll(".courses-arrangers__filters");
+
+        filterTriggers.forEach((item, index) => {
+          item.onclick = () => {
+            filterTriggers[index].classList.toggle("active");
+            filterMenus[index].classList.toggle("active");
+          }
+        })
+
+        const sortTriggers = document.querySelectorAll(".button-sort-trigger");
+        const sortMenus = document.querySelectorAll(".courses-arrangers__sorters");
+
+        sortTriggers.forEach((item, index) => {
+          item.onclick = () => {
+            sortTriggers[index].classList.toggle("active");
+            sortMenus[index].classList.toggle("active");
+          }
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+
+
+      try {
+        const tabs = document.querySelectorAll(".course-tab-trigger");
+        const panels = document.querySelectorAll(".courses-content-panel");
+
+        const closeAll = () => {
+          tabs.forEach(item => item.classList.remove("active"));
+          panels.forEach(item => item.classList.remove("active"));
+        }
+
+        tabs.forEach((item, index) => {
+          item.onclick = () => {
+            closeAll();
+            tabs[index].classList.add("active");
+            panels[index].classList.add("active");
+          }
+        })
+      } catch (error) {
+        console.warn(error);
+      }
+    </script>
+  </body>
+
+</html>

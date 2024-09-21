@@ -7,14 +7,460 @@ $minimum : 400px;
 
 body {
   font-family: "Outfit", sans-serif;
+  color: #151621;
 }
 
-@import "./partials/breadcrumbs";
-@import "./partials/course";
-@import "./partials/course-basics";
-@import "./partials/course-label";
-@import "./partials/course-overall";
-@import "./partials/course-text";
-@import "./partials/course-materials";
-@import "./partials/course-accordion";
-@import "./partials/lesson";
+.course .button,
+.lesson .button {
+  border-radius: 100px;
+  padding: 5px;
+  min-height: 45px;
+
+  img {
+    display: none;
+  }
+}
+
+.button-headphones {
+  color: white;
+  background-color: #151621;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 18px;
+    margin-left: 10px;
+
+    background-image: url("/images/boolanga-headphones.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("/images/boolanga-arrow-up-right.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.button-headphones-white {
+  color: #151621;
+  background-color: unset;
+  border: 1px solid #151621;
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 18px;
+    margin-left: 10px;
+
+    background-image: url("/images/boolanga-headphones-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("/images/boolanga-arrow-up-right-black.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.button-outlined {
+  color: #151621;
+  background-color: unset;
+  border: 1px solid #151621;
+
+  padding-right: 15px;
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("/images/boolanga-arrow-up-left.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.button-rocket {
+  color: white;
+  background-color: #151621;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+
+    background-image: url("/images/boolanga-white-rocket.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("/images/boolanga-arrow-up-right.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-weight: 300;
+  color: #151621;
+
+  img {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    background-image: url("/images/boolanga-arrow-left.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.course-label__image {
+  background: linear-gradient(225deg, #384995 0%, #151825 100%);
+
+  img {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 78px;
+
+    background-image: url("/images/boolanga-girl.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.course-label course-progress-fill {
+  background-color: #2EB8C5;
+}
+
+.course-label course-progress-bar {
+  background-color: #E4E7EC;
+}
+
+.course-label course-progress {
+  color: #3F4067;
+}
+
+.course-text course-beginning {
+  color: #36468E;
+}
+
+.course-accordion article:hover {
+  background-color: #BABAC8;
+}
+
+.course-accordion article.opened {
+  border-color: #3F4067;
+
+  &:hover {
+    background-color: unset;
+  }
+}
+
+.course-accordion article.test {
+  background-color: #36468E0D;
+
+  &:hover {
+    background-color: #BABAC8;
+  }
+
+  &.opened:hover {
+    background-color: #36468E0D;
+  }
+}
+
+.course-accordion accordion-title {
+  img {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-image: url("/images/boolanga-arrow-down.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 14px;
+    right: 20px;
+  }
+}
+
+.course-accordion article.opened accordion-title::after {
+  transform: rotate(180deg);
+}
+
+.course-accordion article accordion-title:hover::after {
+  background-image: url("/images/boolanga-arrow-down-black.svg");
+}
+
+.course-accordion accordion-body a {
+  color: #2EB8C5;
+
+  img {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/boolanga-play-circle.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.course-accordion .test accordion-body a::before {
+  background-image: url("/images/boolanga-rocket-for-accordion.svg");
+}
+
+// ----------------------------------
+
+.lesson__video:not(.active):after {
+  width: 80px;
+  height: 80px;
+  border-radius: unset;
+  background-color: unset;
+  background-image: url("/images/boolanga-video-play.svg");
+}
+
+.lesson__accordion article {
+  border-color: #E4E4F2;
+}
+
+.lesson__accordion article:hover {
+  background-color: #BABAC8;
+}
+
+.lesson__accordion article.test {
+  background-color: #36468E0D;
+
+  &:hover {
+    background-color: #BABAC8;
+  }
+}
+
+.lesson__accordion article.current {
+  border-color: #3F4067;
+  background-color: #FFFFFF1A;
+}
+
+.course-materials__item {
+  border-color: #E4E4F2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+
+    background-image: url("/images/boolanga-file-upload-icon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/boolanga-file-upload-button-before.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin-left: auto;
+  }
+}
+
+.course-materials__item.downloaded {
+  border-color: #3F4067;
+
+  &::after {
+    width: 18px;
+    height: 18px;
+    background-image: url("/images/boolanga-file-upload-button-after.svg");
+  }
+}
+
+.course-materials file-title {
+  color: #151621;
+}
+
+.course-materials file-size {
+  color: #3F4067;
+}
+
+// ----------------------------------
+
+.courses__tabs course-tab {
+  color: #475467;
+}
+
+.courses__tabs course-tab.active {
+  color: #151621;
+  border-color: #151621;
+}
+
+.button-filter {
+  background-color: #2EB8C51A;
+  color: #2EB8C5;
+
+  img {
+    display: none;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/boolanga-grey-cross.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.button-blue {
+  background-color: #151621;
+  color: #F9FAFB;
+}
+
+.courses-arrangers__sorters arranger-sorter.active {
+  img {
+    display: none;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/boolanga-grey-check.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+all-courses .courses-item__middle {
+  border-radius: 0 0 8px 8px;
+  border-bottom: 1px solid #E4E4F2;
+}
+
+.courses-item__middle h2 {
+  color: #151621;
+}
+
+.courses-item__middle course-beginning {
+  color: #36468E;
+}
+
+.course-label .completed course-progress-fill {
+  background-color: #2EB8C5;
+}
+
+.courses-not-found {
+  &::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    background-image: url("/images/boolanga-featured-icon.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-bottom: 16px;
+  }
+
+  img {
+    display: none;
+  }
+}

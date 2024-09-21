@@ -10,11 +10,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://osvitechstorage.blob.core.windows.net/public/styles/style.css">
-
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles-boolanga/style.css">
   </head>
 
@@ -24,7 +20,6 @@
         <section class="lesson">
           <div class="lesson__content">
             <a class="back-button" href="">
-              <img src="./images/boolanga-arrow-left.svg" alt="">
               <span>About course</span>
             </a>
 
@@ -45,36 +40,31 @@
 
                   <div class="course-materials">
                     <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item">
-                      <img src="./images/boolanga-file-upload-icon.svg" alt="">
                       <div class="course-materials__text">
                         <file-title>Homework.mp4</file-title>
                         <file-size>16 MB</file-size>
                       </div>
-                      <img class="course-materials__status --before" src="./images/boolanga-file-upload-button-before.svg" alt="">
-                      <img class="course-materials__status --after" src="./images/boolanga-file-upload-button-after.svg" alt="">
                     </a>
 
                     <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item downloaded">
-                      <img src="./images/boolanga-file-upload-icon.svg" alt="">
                       <div class="course-materials__text">
                         <file-title>Workbook.pdf</file-title>
                         <file-size>200 KB</file-size>
                       </div>
-                      <img class="course-materials__status --before" src="./images/boolanga-file-upload-button-before.svg" alt="">
-                      <img class="course-materials__status --after" src="./images/boolanga-file-upload-button-after.svg" alt="">
                     </a>
                   </div>
 
+                  <button class="button button-rocket">
+                    <span>Pass the test</span>
+                  </button>
+
                   <div class="course-buttons">
                     <button class="button button-outlined" disabled>
-                      <img src="./images/boolanga-arrow-up-left.svg" alt="">
                       <span>Previous lesson</span>
                     </button>
 
-                    <button class="button button-headphones">
-                      <img src="./images/boolanga-headphones.svg" alt="">
+                    <button class="button button-headphones-white">
                       <span>Next lesson</span>
-                      <img src="./images/boolanga-arrow-up-right.svg" alt="">
                     </button>
                   </div>
                 </div>
@@ -86,40 +76,85 @@
                 <div class="lesson__accordion">
                   <a href="">
                     <article class="current">
-                      <span class="tag tag--passed">Done</span>
-                      <h2>Part 1. How to get started</h2>
+                      <div class="lesson__accordion-row">
+                        <p>Part 1</p>
+                        <span class="tag tag--passed">Done</span>
+                      </div>
+
+                      <h2>How to get started</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article class="test">
+                      <div class="lesson__accordion-row">
+                        <p>Test 1</p>
+                        <span class="tag tag--passed">Done</span>
+                      </div>
+
+                      <h2>How to get started</h2>
                     </article>
                   </a>
 
                   <a href="">
                     <article>
-                      <span class="tag tag--in-process">In process</span>
-                      <h2>Lesson 2. The title of the second lesson is in two lines for clarity of text arrangement</h2>
+                      <div class="lesson__accordion-row">
+                        <p>Lesson 2</p>
+                        <span class="tag tag--in-process">In process</span>
+                      </div>
+
+                      <h2>The title of the second lesson is in two lines for clarity of text arrangement</h2>
                     </article>
                   </a>
 
                   <a href="">
                     <article>
-                      <h2>Lesson 3. Name of the third lesson</h2>
+                      <div class="lesson__accordion-row">
+                        <p>Lesson 3</p>
+                      </div>
+
+                      <h2>Name of the third lesson</h2>
                     </article>
                   </a>
 
                   <a href="">
                     <article>
-                      <h2>Lesson 4. Name of the fourth lesson</h2>
+                      <div class="lesson__accordion-row">
+                        <p>Lesson 4</p>
+                      </div>
+
+                      <h2>Name of the fourth lesson</h2>
                     </article>
                   </a>
 
                   <a href="">
                     <article>
-                      <h2>Lesson 5. Name of the fifth lesson</h2>
+                      <div class="lesson__accordion-row">
+                        <p>Lesson 5</p>
+                      </div>
+
+                      <h2>Name of the fifth lesson</h2>
                     </article>
                   </a>
 
                   <a href="">
                     <article>
-                      <span class="tag tag--new">New</span>
+                      <div class="lesson__accordion-row">
+                        <p>Bonus lesson</p>
+                        <span class="tag tag--new">New</span>
+                      </div>
+
                       <h2>Bonus lesson</h2>
+                    </article>
+                  </a>
+
+                  <a href="">
+                    <article class="test">
+                      <div class="lesson__accordion-row">
+                        <p>Final test</p>
+                      </div>
+
+                      <h2>Final test</h2>
                     </article>
                   </a>
                 </div>

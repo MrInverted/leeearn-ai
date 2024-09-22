@@ -15,15 +15,18 @@ body {
   display: none;
 }
 
-.button-headphones {
+.button-headphones,
+.button-course-continue {
   color: white;
   background-color: #151621;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
 }
-.button-headphones:not([disabled]):hover {
+.button-headphones:not([disabled]):hover,
+.button-course-continue:not([disabled]):hover {
   opacity: 0.6;
 }
-.button-headphones::before {
+.button-headphones::before,
+.button-course-continue::before {
   content: "";
   display: block;
   width: 16px;
@@ -34,7 +37,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.button-headphones::after {
+.button-headphones::after,
+.button-course-continue::after {
   content: "";
   display: block;
   width: 35px;
@@ -45,15 +49,18 @@ body {
   background-repeat: no-repeat;
 }
 
-.button-headphones-white {
+.button-headphones-white,
+.button-lesson-next {
   color: #151621;
   background-color: unset;
   border: 1px solid #151621;
 }
-.button-headphones-white:not([disabled]):hover {
+.button-headphones-white:not([disabled]):hover,
+.button-lesson-next:not([disabled]):hover {
   opacity: 0.6;
 }
-.button-headphones-white::before {
+.button-headphones-white::before,
+.button-lesson-next::before {
   content: "";
   display: block;
   width: 16px;
@@ -64,7 +71,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.button-headphones-white::after {
+.button-headphones-white::after,
+.button-lesson-next::after {
   content: "";
   display: block;
   width: 35px;
@@ -75,16 +83,19 @@ body {
   background-repeat: no-repeat;
 }
 
-.button-outlined {
+.button-outlined,
+.button-lesson-prev {
   color: #151621;
   background-color: unset;
   border: 1px solid #151621;
   padding-right: 15px;
 }
-.button-outlined:not([disabled]):hover {
+.button-outlined:not([disabled]):hover,
+.button-lesson-prev:not([disabled]):hover {
   opacity: 0.6;
 }
-.button-outlined::before {
+.button-outlined::before,
+.button-lesson-prev::before {
   content: "";
   display: block;
   width: 35px;
@@ -95,15 +106,18 @@ body {
   background-repeat: no-repeat;
 }
 
-.button-rocket {
+.button-rocket,
+.button-lesson-test {
   color: white;
   background-color: #151621;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
 }
-.button-rocket:not([disabled]):hover {
+.button-rocket:not([disabled]):hover,
+.button-lesson-test:not([disabled]):hover {
   opacity: 0.6;
 }
-.button-rocket::before {
+.button-rocket::before,
+.button-lesson-test::before {
   content: "";
   display: block;
   width: 17px;
@@ -114,7 +128,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.button-rocket::after {
+.button-rocket::after,
+.button-lesson-test::after {
   content: "";
   display: block;
   width: 35px;

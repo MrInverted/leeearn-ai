@@ -21,7 +21,8 @@ body {
   }
 }
 
-.button-headphones {
+.button-headphones,
+.button-course-continue {
   color: white;
   background-color: #151621;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
@@ -56,7 +57,8 @@ body {
   }
 }
 
-.button-headphones-white {
+.button-headphones-white,
+.button-lesson-next {
   color: #151621;
   background-color: unset;
   border: 1px solid #151621;
@@ -91,7 +93,8 @@ body {
   }
 }
 
-.button-outlined {
+.button-outlined,
+.button-lesson-prev {
   color: #151621;
   background-color: unset;
   border: 1px solid #151621;
@@ -115,7 +118,8 @@ body {
   }
 }
 
-.button-rocket {
+.button-rocket,
+.button-lesson-test {
   color: white;
   background-color: #151621;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);

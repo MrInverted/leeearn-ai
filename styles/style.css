@@ -196,26 +196,38 @@ html {
   transform: rotate(360deg);
 }
 
-.button-blue {
+.button-blue,
+.button-course-continue,
+.button-lesson-test,
+.button-lesson-next {
   color: white;
   background-color: #7F56D9;
 }
-.button-blue svg {
+.button-blue svg,
+.button-course-continue svg,
+.button-lesson-test svg,
+.button-lesson-next svg {
   stroke: #F9FAFB;
 }
-.button-blue:not([disabled]):hover {
+.button-blue:not([disabled]):hover,
+.button-course-continue:not([disabled]):hover,
+.button-lesson-test:not([disabled]):hover,
+.button-lesson-next:not([disabled]):hover {
   opacity: 0.6;
 }
 
-.button-gray {
+.button-gray,
+.button-lesson-prev {
   border: 1px solid #E4E7EC;
   background-color: #F9FAFB;
   color: #344054;
 }
-.button-gray svg {
+.button-gray svg,
+.button-lesson-prev svg {
   stroke: #344054;
 }
-.button-gray:not([disabled]):hover {
+.button-gray:not([disabled]):hover,
+.button-lesson-prev:not([disabled]):hover {
   opacity: 0.6;
 }
 

@@ -4,14 +4,14 @@ body {
   color: #151621;
 }
 
-.course .button,
-.lesson .button {
+.course .button:not(.button-outline),
+.lesson .button:not(.button-outline) {
   border-radius: 100px;
   padding: 5px;
   min-height: 45px;
 }
-.course .button img,
-.lesson .button img {
+.course .button:not(.button-outline) img,
+.lesson .button:not(.button-outline) img {
   display: none;
 }
 
@@ -396,4 +396,36 @@ all-courses .courses-item__middle {
 }
 .courses-not-found img {
   display: none;
+}
+
+.lesson-test {
+  background-color: #F5F5F9;
+}
+
+.lesson-test h1 {
+  color: #151621;
+}
+
+.lesson-test__question b {
+  color: #151621;
+}
+
+.lesson-test__question input[type=checkbox]::before {
+  background-image: url("/images/boolanga-checkbox-empty.svg");
+}
+
+.lesson-test__question input[type=checkbox]:checked:before {
+  background-image: url("/images/boolanga-checkbox-filled.svg");
+}
+
+.lesson-test__question input[type=radio]::before {
+  background-image: url("/images/boolanga-radio-empty.svg");
+}
+
+.lesson-test__question input[type=radio]:checked:before {
+  background-image: url("/images/boolanga-radio-filled.svg");
+}
+
+.lesson-test__percent-block::before {
+  background: conic-gradient(#2EB8C5 0deg var(--progress), #E4E7EC var(--progress));
 }

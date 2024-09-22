@@ -1,0 +1,215 @@
+.lesson-test {
+  padding: 32px 32px 48px 32px;
+  background-color: #FCFCFD;
+  border-radius: 8px;
+
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E4E7EC;
+
+    line-height: 150%;
+    color: #475467;
+  }
+
+  hgroup mark {
+    font-size: 14px;
+    line-height: 143%;
+    color: #f04438;
+    background-color: unset;
+  }
+
+  hgroup p:has(mark) {
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: #101828;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    max-width: 480px;
+  }
+
+  &__question {}
+
+  &__question p {
+    line-height: 150%;
+    color: #475467;
+  }
+
+  &__question b {
+    font-weight: 600;
+    color: #344054;
+  }
+
+  &__question label {
+    display: block;
+    margin-top: 12px;
+  }
+
+  &__question label:has(input[type='checkbox']),
+  &__question label:has(input[type='radio']) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__question input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    accent-color: 7F56D9;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      background-image: url("/images/checkbox-empty.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:checked:before {
+      background-image: url("/images/checkbox-filled.svg");
+    }
+  }
+
+  &__question input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    accent-color: 7F56D9;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      background-image: url("/images/radio-empty.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:checked:before {
+      background-image: url("/images/radio-filled.svg");
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #e4e7ec;
+    padding: 12px 24px 16px 24px;
+
+    margin-top: 32px;
+
+    @media (max-width: $forMobile) {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__results {
+    max-width: 480px;
+  }
+
+  &__results h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 133%;
+    color: #101828;
+
+    margin-bottom: 12px;
+  }
+
+  &__results lesson-result {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 127%;
+    text-align: center;
+    color: #101828;
+  }
+
+  &__results .lesson-test__buttons {
+    margin-top: 32px;
+  }
+
+  &__percent-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+
+    margin-bottom: 24px;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    color: #475467;
+
+    position: relative;
+
+    span,
+    lesson-result {
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  &__percent-block::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+    position: absolute;
+    z-index: 1;
+    background: conic-gradient(#7F56D9 0deg var(--progress), #F2F4F7 var(--progress));
+  }
+
+  &__percent-block::after {
+    content: "";
+    display: block;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: 100%;
+
+    position: absolute;
+    z-index: 2;
+    background: white;
+  }
+}

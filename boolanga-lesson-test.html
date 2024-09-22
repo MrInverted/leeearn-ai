@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles-boolanga/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="lesson">
+          <div class="lesson__content">
+            <a class="back-button" href="">
+              <span>Lesson 1. How to get started</span>
+            </a>
+
+            <div class="lesson__grid">
+              <div class="lesson-test">
+                <hgroup>
+                  <h1>How to get started</h1>
+                  <p>A short description of the test</p>
+                  <p><mark>*Mandatory question</mark></p>
+                </hgroup>
+
+                <div class="lesson-test__column">
+                  <div class="lesson-test__question">
+                    <p><b>A question with a simple answer *</b></p>
+                    <p>A short description if necessary</p>
+                    <label>
+                      <input type="text" placeholder="My answer" name="">
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>A question with a simple answer</b></p>
+                    <label>
+                      <input type="text" placeholder="My answer" name="">
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>What did you like about the first lesson?</b></p>
+                    <label>
+                      <input type="checkbox" name="Presentation-of-material" value="Presentation of material">
+                      <span>Presentation of material</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="Picture-quality" value="Picture quality">
+                      <span>Picture quality</span>
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>What can be improved</b></p>
+                    <label>
+                      <input type="radio" name="improved" value="Presentation of material">
+                      <span>Presentation of material</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="improved" value="Picture quality">
+                      <span>Picture quality</span>
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>A question with a detailed answer</b></p>
+                    <label>
+                      <textarea name="" placeholder="My answer"></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="lesson-test__footer">
+                  <p>Page 1 of 1</p>
+
+                  <div class="lesson-test__buttons">
+                    <button class="button button-outline" disabled>Back</button>
+                    <button class="button button-outline">Next</button>
+                  </div>
+                </div>
+
+                <div class="lesson-test__results" style="display: none;">
+                  <div class="lesson-test__percent-block" style="--progress: 0.63turn;">
+                    <span>Your result</span>
+                    <lesson-result>63%</lesson-result>
+                  </div>
+
+                  <h2>15 true tips in 20!</h2>
+                  <p>You are an attentive listener and definitely interested in the topic. Keep it up!</p>
+
+                  <div class="lesson-test__buttons">
+                    <button class="button button-headphones-white">
+                      <span>Next lesson</span>
+                      <img src="./images/arrow-right-white.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="lesson__aside" style="background-color: rgba(128, 128, 128, 0.2); min-height: 600px;"></aside>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      try {
+        const videoFrame = document.querySelector(".lesson__video");
+        const videoId = videoFrame.dataset.videoid;
+        let isCanBeActivated = true;
+
+        if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+          videoFrame.classList.add("active");
+          isCanBeActivated = false;
+          videoFrame.insertAdjacentHTML("afterbegin", `
+          <iframe
+            src="https://www.youtube.com/embed/${videoId}&autoplay=true"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+          `);
+        }
+      } catch (error) {
+        console.warn(error)
+      }
+
+
+      try {
+        const tabs = document.querySelectorAll(".lesson__tab");
+        const tabsContent = [
+          document.querySelector(".course-text"),
+          document.querySelector(".lesson__aside")
+        ]
+
+        const resetAll = () => {
+          tabs.forEach(item => item.classList.remove("active"));
+          tabsContent.forEach(item => {
+            item.classList.remove("mobile-shown");
+            item.classList.add("mobile-hidden");
+          });
+        }
+
+        if (tabs) tabs.forEach((item, index) => {
+          item.onclick = () => {
+            resetAll();
+            tabs[index].classList.add("active");
+            tabsContent[index].classList.replace("mobile-hidden", "mobile-shown");
+          }
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+    </script>
+
+  </body>
+
+</html>

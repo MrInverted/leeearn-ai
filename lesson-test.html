@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main>
+        <section class="lesson">
+          <div class="lesson__content">
+            <a class="back-button" href="">
+              <img src="./images/arrow-left-blue.svg" alt="">
+              <span>Урок 1. Знайомство з Roblox </span>
+            </a>
+
+            <div class="lesson__grid">
+              <div class="lesson-test">
+                <hgroup>
+                  <h1>Знайомство з Roblox</h1>
+                  <p>Небольшое описание теста </p>
+                  <p><mark>*Обязательный вопрос</mark></p>
+                </hgroup>
+
+                <div class="lesson-test__column">
+                  <div class="lesson-test__question">
+                    <p><b>Вопрос с простым ответом *</b></p>
+                    <p>Небольшое описание по необходимости</p>
+                    <label>
+                      <input type="text" placeholder="Мой ответ" name="">
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>Вопрос с простым ответом</b></p>
+                    <label>
+                      <input type="text" placeholder="Мой ответ" name="">
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>Что вам нравится?</b></p>
+                    <label>
+                      <input type="checkbox" name="it" value="Программирование">
+                      <span>Программирование</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="plumbering" value="Сантехника">
+                      <span>Сантехника</span>
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>Какой чай пьёте?</b></p>
+                    <label>
+                      <input type="radio" name="tea" value="Обычный">
+                      <span>Обычный</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="tea" value="С магазина">
+                      <span>С магазина</span>
+                    </label>
+                  </div>
+
+                  <div class="lesson-test__question">
+                    <p><b>Вопрос с развернутым ответом</b></p>
+                    <label>
+                      <textarea name="" placeholder="Мой ответ"></textarea>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="lesson-test__footer">
+                  <p>Страница 1 из 10</p>
+
+                  <div class="lesson-test__buttons">
+                    <button class="button button-outline" disabled>Назад</button>
+                    <button class="button button-outline">Далі</button>
+                  </div>
+                </div>
+
+                <div class="lesson-test__results" style="display: none;">
+                  <div class="lesson-test__percent-block" style="--progress: 0.63turn;">
+                    <span>Твой результат</span>
+                    <lesson-result>63%</lesson-result>
+                  </div>
+
+                  <h2>15 вірних відповідей з 20!</h2>
+                  <p>Ти уважний слухач та точно зацікавлений в темі Roblox розробки. Так тримати!</p>
+
+                  <div class="lesson-test__buttons">
+                    <button class="button button-blue">
+                      <span>Наступний урок</span>
+                      <img src="./images/arrow-right-white.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="lesson__aside" style="background-color: rgba(128, 128, 128, 0.2); min-height: 600px;"></aside>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      try {
+        const videoFrame = document.querySelector(".lesson__video");
+        const videoId = videoFrame.dataset.videoid;
+        let isCanBeActivated = true;
+
+        if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+          videoFrame.classList.add("active");
+          isCanBeActivated = false;
+          videoFrame.insertAdjacentHTML("afterbegin", `
+          <iframe
+            src="https://www.youtube.com/embed/${videoId}&autoplay=true"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+          `);
+        }
+      } catch (error) {
+        console.warn(error)
+      }
+
+
+      try {
+        const tabs = document.querySelectorAll(".lesson__tab");
+        const tabsContent = [
+          document.querySelector(".course-text"),
+          document.querySelector(".lesson__aside")
+        ]
+
+        const resetAll = () => {
+          tabs.forEach(item => item.classList.remove("active"));
+          tabsContent.forEach(item => {
+            item.classList.remove("mobile-shown");
+            item.classList.add("mobile-hidden");
+          });
+        }
+
+        if (tabs) tabs.forEach((item, index) => {
+          item.onclick = () => {
+            resetAll();
+            tabs[index].classList.add("active");
+            tabsContent[index].classList.replace("mobile-hidden", "mobile-shown");
+          }
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+    </script>
+
+  </body>
+
+</html>

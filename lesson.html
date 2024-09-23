@@ -193,6 +193,8 @@
         let isCanBeActivated = true;
 
         if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+          if (!isCanBeActivated) return;
+
           videoFrame.classList.add("active");
           isCanBeActivated = false;
           videoFrame.insertAdjacentHTML("afterbegin", `

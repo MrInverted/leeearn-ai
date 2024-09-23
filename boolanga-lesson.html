@@ -171,7 +171,9 @@
         const videoId = videoFrame.dataset.videoid;
         let isCanBeActivated = true;
 
-        if (videoFrame && isCanBeActivated) videoFrame.onclick = () => {
+        if (videoFrame) videoFrame.onclick = () => {
+          if (!isCanBeActivated) return;
+
           videoFrame.classList.add("active");
           isCanBeActivated = false;
           videoFrame.insertAdjacentHTML("afterbegin", `

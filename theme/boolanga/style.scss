@@ -38,7 +38,7 @@ body {
     height: 18px;
     margin-left: 10px;
 
-    background-image: url("/images/boolanga-headphones.svg");
+    background-image: url("./images/boolanga-headphones.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ body {
     width: 35px;
     height: 35px;
 
-    background-image: url("/images/boolanga-arrow-up-right.svg");
+    background-image: url("./images/boolanga-arrow-up-right.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@ body {
     height: 18px;
     margin-left: 10px;
 
-    background-image: url("/images/boolanga-headphones-black.svg");
+    background-image: url("./images/boolanga-headphones-black.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body {
     width: 35px;
     height: 35px;
 
-    background-image: url("/images/boolanga-arrow-up-right-black.svg");
+    background-image: url("./images/boolanga-arrow-up-right-black.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
     width: 35px;
     height: 35px;
 
-    background-image: url("/images/boolanga-arrow-up-left.svg");
+    background-image: url("./images/boolanga-arrow-up-left.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ body {
     height: 17px;
     margin-left: 10px;
 
-    background-image: url("/images/boolanga-white-rocket.svg");
+    background-image: url("./images/boolanga-white-rocket.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
     width: 35px;
     height: 35px;
 
-    background-image: url("/images/boolanga-arrow-up-right.svg");
+    background-image: url("./images/boolanga-arrow-up-right.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ body {
     width: 14px;
     height: 14px;
 
-    background-image: url("/images/boolanga-arrow-left.svg");
+    background-image: url("./images/boolanga-arrow-left.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -192,7 +192,7 @@ body {
     width: 60px;
     height: 78px;
 
-    background-image: url("/images/boolanga-girl.png");
+    background-image: url("./images/boolanga-girl.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@ body {
     width: 35px;
     height: 35px;
 
-    background-image: url("/images/boolanga-arrow-down.svg");
+    background-image: url("./images/boolanga-arrow-down.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,7 +271,7 @@ body {
 }
 
 .course-accordion article accordion-title:hover::after {
-  background-image: url("/images/boolanga-arrow-down-black.svg");
+  background-image: url("./images/boolanga-arrow-down-black.svg");
 }
 
 .course-accordion accordion-body a {
@@ -287,7 +287,7 @@ body {
     width: 20px;
     height: 20px;
 
-    background-image: url("/images/boolanga-play-circle.svg");
+    background-image: url("./images/boolanga-play-circle.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -295,7 +295,7 @@ body {
 }
 
 .course-accordion .test accordion-body a::before {
-  background-image: url("/images/boolanga-rocket-for-accordion.svg");
+  background-image: url("./images/boolanga-rocket-for-accordion.svg");
 }
 
 // ----------------------------------
@@ -305,7 +305,7 @@ body {
   height: 80px;
   border-radius: unset;
   background-color: unset;
-  background-image: url("/images/boolanga-video-play.svg");
+  background-image: url("./images/boolanga-video-play.svg");
 }
 
 .lesson__accordion article {
@@ -338,7 +338,7 @@ body {
     width: 36px;
     height: 36px;
 
-    background-image: url("/images/boolanga-file-upload-icon.svg");
+    background-image: url("./images/boolanga-file-upload-icon.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -350,7 +350,7 @@ body {
     width: 20px;
     height: 20px;
 
-    background-image: url("/images/boolanga-file-upload-button-before.svg");
+    background-image: url("./images/boolanga-file-upload-button-before.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -365,7 +365,7 @@ body {
   &::after {
     width: 18px;
     height: 18px;
-    background-image: url("/images/boolanga-file-upload-button-after.svg");
+    background-image: url("./images/boolanga-file-upload-button-after.svg");
   }
 }
 
@@ -402,7 +402,7 @@ body {
     width: 20px;
     height: 20px;
 
-    background-image: url("/images/boolanga-grey-cross.svg");
+    background-image: url("./images/boolanga-grey-cross.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -425,7 +425,7 @@ body {
     width: 20px;
     height: 20px;
 
-    background-image: url("/images/boolanga-grey-check.svg");
+    background-image: url("./images/boolanga-grey-check.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -456,7 +456,7 @@ all-courses .courses-item__middle {
     width: 56px;
     height: 56px;
 
-    background-image: url("/images/boolanga-featured-icon.svg");
+    background-image: url("./images/boolanga-featured-icon.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -484,19 +484,19 @@ all-courses .courses-item__middle {
 }
 
 .lesson-test__question input[type=checkbox]::before {
-  background-image: url("/images/boolanga-checkbox-empty.svg");
+  background-image: url("./images/boolanga-checkbox-empty.svg");
 }
 
 .lesson-test__question input[type=checkbox]:checked:before {
-  background-image: url("/images/boolanga-checkbox-filled.svg");
+  background-image: url("./images/boolanga-checkbox-filled.svg");
 }
 
 .lesson-test__question input[type=radio]::before {
-  background-image: url("/images/boolanga-radio-empty.svg");
+  background-image: url("./images/boolanga-radio-empty.svg");
 }
 
 .lesson-test__question input[type=radio]:checked:before {
-  background-image: url("/images/boolanga-radio-filled.svg");
+  background-image: url("./images/boolanga-radio-filled.svg");
 }
 
 .lesson-test__percent-block::before {

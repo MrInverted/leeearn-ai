@@ -1,0 +1,72 @@
+.left-panel {
+  width: 300px;
+  padding: 32px 16px;
+  background-color: #fff;
+  border-right: 1px solid #e4e7ec;
+
+  &__logo {
+    margin-bottom: 20px;
+    padding-left: 12px;
+  }
+
+  &__nav {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #101828;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__nav-item {}
+
+  &__nav-item.--with-accordion>.left-panel__nav-title.--with-chevron::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+
+    background-image: url("/images/platform-chevron-up.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: rotate(180deg);
+  }
+
+  &__nav-item.--with-accordion.open .left-panel__nav-title.--with-chevron::after {
+    transform: rotate(0deg);
+  }
+
+  &__nav-item.--with-accordion.open .left-panel__nav-accordion {
+    grid-template-rows: 1fr;
+    margin-top: 4px;
+  }
+
+  &__nav-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  &__nav-title:hover {
+    background-color: #f9fafb;
+  }
+
+  &__nav-title.selected {
+    background-color: #f9fafb;
+  }
+
+  &__nav-accordion {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.5s;
+  }
+}

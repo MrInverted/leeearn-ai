@@ -1,0 +1,106 @@
+.platform-header {
+  background-color: #fcfcfd;
+  padding: 32px 32px 20px 32px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    user-name {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 150%;
+      color: #101828;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__languages {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #475467;
+
+    min-width: 70px;
+    position: relative;
+  }
+
+  &__languages.opened .platform-header__languages-all {
+    grid-template-rows: 1fr;
+  }
+
+  &__languages.opened .platform-header__languages-selected::after {
+    transform: rotate(180deg);
+  }
+
+  &__languages-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  &__languages-selected::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("/images/platform-chevron-down-gray.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__languages-all {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.5s;
+
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f9fafb;
+      }
+    }
+  }
+
+  &__exit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #475467;
+  }
+}

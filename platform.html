@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tailwind-out.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <div class="wrapper panel-grid-wrapper">
+      <aside class="left-panel">
+        <div class="left-panel__logo">
+          <img src="./images/platform-logo.svg" alt="">
+        </div>
+
+        <ul class="left-panel__nav">
+          <li class="left-panel__nav-item --with-accordion open">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-1.svg" alt="">
+              <span>Мій профіль</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title selected">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-2.svg" alt="">
+              <span>Курси</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-3.svg" alt="">
+              <span>Задачі</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-4.svg" alt="">
+              <span>Календар</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-5.svg" alt="">
+              <span>Уроки</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-6.svg" alt="">
+              <span>Групи</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-7.svg" alt="">
+              <span>Викладачі</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="platform-header">
+        <div class="platform-header__row">
+          <div class="platform-header__left">
+            <user-name>
+              Привіт, <span>user_login</span>
+            </user-name>
+
+            <span class="tag tag--blue">
+              <span>Студент</span>
+            </span>
+          </div>
+
+          <!--  -->
+
+          <div class="platform-header__right">
+            <div class="platform-header__languages">
+              <div class="platform-header__languages-selected">
+                <span>Укр</span>
+              </div>
+
+              <div class="platform-header__languages-all">
+                <hidden-content>
+                  <ul>
+                    <li>Рус</li>
+                    <li>Англ</li>
+                  </ul>
+                </hidden-content>
+              </div>
+            </div>
+
+            <div class="platform-header__exit">
+              <img src="./images/platform-log-out.svg" alt="">
+              <span>Вихід</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="platform-main --with-aside">
+        <section class="platform-overview">
+          <div class="overview-statistics">
+            <div class="platform-main__title">
+              <h2>Статистика</h2>
+            </div>
+
+            <div class="platform-overview__grid--three">
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <stat-title>Мій прогрес</stat-title>
+                  <img src="./images/stat-dropdown.svg" alt="">
+                </div>
+                <div class="overview-statistics__content">
+                  <stat-figure>48/120</stat-figure>
+                  <span>уроків пройдено</span>
+                </div>
+                <div class="overview-statistics__chart">
+                  <img src="./images/temp/Progress circle.jpg" alt="">
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <stat-title>Відвідуваність</stat-title>
+                  <img src="./images/stat-dropdown.svg" alt="">
+                </div>
+                <div class="overview-statistics__content">
+                  <stat-figure>86%</stat-figure>
+                  <span>
+                    <span class="--red">↓ 10%</span>
+                    ніж минулого місяця
+                  </span>
+                </div>
+                <div class="overview-statistics__chart">
+                  <img src="./images/temp/_Chart.jpg" alt="">
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <stat-title>Мої Osvitech Coin</stat-title>
+                  <img src="./images/stat-dropdown.svg" alt="">
+                </div>
+                <div class="overview-statistics__content">
+                  <stat-figure>5 020</stat-figure>
+                  <span>балів зароблено</span>
+                </div>
+                <div class="overview-statistics__chart">
+                  <img src="./images/temp/_Chart (1).jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="overview-courses">
+            <div class="platform-main__title">
+              <h2>Мої курси</h2>
+
+              <a href="" class="platform-main__more">
+                <span>Детальніше</span>
+                <more-arrow>→</more-arrow>
+              </a>
+            </div>
+
+            <div class="platform-overview__grid--three">
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <course-title>Python</course-title>
+                  <img src="./images/platform-courses-desktop.svg" alt="">
+                </div>
+
+                <div class="overview-courses__labels">
+                  <span class="tag tag--blue">Програмування</span>
+                </div>
+
+                <div class="overview-courses__stats">
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overvies-book.svg" alt="">
+                    <span>32 урока</span>
+                  </div>
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overview-message-square.svg" alt="">
+                    <span>26 годин</span>
+                  </div>
+                </div>
+
+                <div class="overview-courses__progress course-label">
+                  <course-progress-bar>
+                    <course-progress-fill style="width: 40%"></course-progress-fill>
+                  </course-progress-bar>
+                  <course-percent>40</course-percent>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <course-title>Англійська мова</course-title>
+                  <img src="./images/platform-courses-cat.svg" alt="">
+                </div>
+
+                <div class="overview-courses__labels">
+                  <span class="tag tag--red">Іноземні мови</span>
+                </div>
+
+                <div class="overview-courses__stats">
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overvies-book.svg" alt="">
+                    <span>32 урока</span>
+                  </div>
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overview-message-square.svg" alt="">
+                    <span>26 годин</span>
+                  </div>
+                </div>
+
+                <div class="overview-courses__progress course-label">
+                  <course-progress-bar>
+                    <course-progress-fill style="width: 80%"></course-progress-fill>
+                  </course-progress-bar>
+                  <course-percent>80</course-percent>
+                </div>
+              </div>
+
+              <!--  -->
+
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <course-title>Roblox</course-title>
+                  <img src="./images/platform-courses-desktop.svg" alt="">
+                </div>
+
+                <div class="overview-courses__labels">
+                  <span class="tag tag--blue">Програмування</span>
+                </div>
+
+                <div class="overview-courses__stats">
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overvies-book.svg" alt="">
+                    <span>32 урока</span>
+                  </div>
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overview-message-square.svg" alt="">
+                    <span>26 годин</span>
+                  </div>
+                </div>
+
+                <div class="overview-courses__progress course-label">
+                  <course-progress-bar class="completed">
+                    <course-progress-fill style="width: 100%"></course-progress-fill>
+                  </course-progress-bar>
+                  <course-percent>100</course-percent>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="overview-courses">
+            <div class="platform-main__title">
+              <h2>Рекомендовані курси</h2>
+            </div>
+
+            <div class="platform-overview__grid--three">
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <course-title>Шкільні предмети</course-title>
+                  <img src="./images/platform-courses-easel.svg" alt="">
+                </div>
+
+                <div class="overview-courses__labels">
+                  <span class="tag tag--school">Програмування</span>
+                </div>
+
+                <div class="overview-courses__stats">
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overvies-book.svg" alt="">
+                    <span>32 урока</span>
+                  </div>
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overview-message-square.svg" alt="">
+                    <span>26 годин</span>
+                  </div>
+                </div>
+
+                <a href="" class="overview-courses__more">
+                  <span>Детальніше</span>
+                  <more-arrow>→</more-arrow>
+                </a>
+
+                <div class="overview-courses__discount">-10%</div>
+              </div>
+
+              <!--  -->
+
+              <div class="platform-overview__item">
+                <div class="platform-overview__title">
+                  <course-title>Шкільні предмети</course-title>
+                  <img src="./images/platform-courses-easel.svg" alt="">
+                </div>
+
+                <div class="overview-courses__labels">
+                  <span class="tag tag--school">Програмування</span>
+                </div>
+
+                <div class="overview-courses__stats">
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overvies-book.svg" alt="">
+                    <span>32 урока</span>
+                  </div>
+                  <div class="overview-courses__stats-item">
+                    <img src="./images/platform-overview-message-square.svg" alt="">
+                    <span>26 годин</span>
+                  </div>
+                </div>
+
+                <a href="" class="overview-courses__more">
+                  <span>Детальніше</span>
+                  <more-arrow>→</more-arrow>
+                </a>
+
+                <div class="overview-courses__discount">-30%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="platform-overview-right">
+          <div>
+            <div class="platform-main__title">
+              <h2>Календар</h2>
+            </div>
+
+            <div class="platform-overview-calendar">
+              <h3>January</h3>
+
+              <div class="platform-overview-calendar__table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Пн</th>
+                      <th>Вт</th>
+                      <th>Ср</th>
+                      <th>Чт</th>
+                      <th>Пт</th>
+                      <th>Сб</th>
+                      <th>Вс</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table-date>01</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td class="current-day">
+                        <table-date>02</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>03</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>04</table-date>
+                        <table-events>
+                          <table-event class="green"></table-event>
+                        </table-events>
+                      </td>
+                      <td>
+                        <table-date>05</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>06</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>07</table-date>
+                        <table-events></table-events>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table-date>08</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>09</table-date>
+                        <table-events>
+                          <table-event class="green"></table-event>
+                          <table-event class="purple"></table-event>
+                        </table-events>
+                      </td>
+                      <td>
+                        <table-date>10</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>11</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>12</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>13</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>14</table-date>
+                        <table-events></table-events>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table-date>15</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>16</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>17</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>18</table-date>
+                        <table-events>
+                          <table-event class="purple"></table-event>
+                        </table-events>
+                      </td>
+                      <td>
+                        <table-date>19</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>20</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>21</table-date>
+                        <table-events></table-events>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table-date>22</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>23</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>24</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>25</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>26</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>27</table-date>
+                        <table-events>
+                          <table-event class="green"></table-event>
+                          <table-event class="purple"></table-event>
+                          <table-event class="orange"></table-event>
+                        </table-events>
+                      </td>
+                      <td>
+                        <table-date>28</table-date>
+                        <table-events></table-events>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table-date>29</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>30</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td>
+                        <table-date>31</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td class="other-month">
+                        <table-date>01</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td class="other-month">
+                        <table-date>02</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td class="other-month">
+                        <table-date>03</table-date>
+                        <table-events></table-events>
+                      </td>
+                      <td class="other-month">
+                        <table-date>04</table-date>
+                        <table-events></table-events>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="platform-overview-calendar__events">
+                <div class="platform-overview-calendar__event-day">
+                  <h4>Сьогодні</h4>
+
+                  <ul>
+                    <li>
+                      <event-mark style="background-color: #6ce9a6;"></event-mark>
+                      <span style="color: #054f31;">Team Call</span>
+                      <event-time>08:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #c7d7fe;"></event-mark>
+                      <span style="color: #2d3282;">Вебінар</span>
+                      <event-time>12:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #b9e6fe;"></event-mark>
+                      <span style="color: #0b4a6f;">Roblox, вводний урок</span>
+                      <event-time>14:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #fecdd6;"></event-mark>
+                      <span style="color: #89123e;">Англійська мова, 1 урок</span>
+                      <event-time>16:00</event-time>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="platform-overview-calendar__event-day">
+                  <h4>Завтра</h4>
+
+                  <ul>
+                    <li>
+                      <event-mark style="background-color: #6ce9a6;"></event-mark>
+                      <span style="color: #054f31;">Team Call</span>
+                      <event-time>08:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #c7d7fe;"></event-mark>
+                      <span style="color: #2d3282;">Вебінар</span>
+                      <event-time>12:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #b9e6fe;"></event-mark>
+                      <span style="color: #0b4a6f;">Roblox, вводний урок</span>
+                      <event-time>14:00</event-time>
+                    </li>
+                    <li>
+                      <event-mark style="background-color: #fecdd6;"></event-mark>
+                      <span style="color: #89123e;">Англійська мова, 1 урок</span>
+                      <event-time>16:00</event-time>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="platform-main__title">
+              <h2>Сповіщення</h2>
+            </div>
+
+            <div class="platform-overview-notification">
+              <img src="./images/platform-notification-success.svg" alt="">
+              <h4>Будете на уроці?</h4>
+              <p>Підтвердіть урок <b>“Англійська мова, 1 урок”</b> 02.09.24 о 8.00</p>
+
+              <div class="platform-overview-notification__buttons">
+                <button class="button button-blue">Підтвердити</button>
+                <button class="button button-outline">Відмінити</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src=""></script>
+
+    <script>
+      try {
+        const items = document.querySelectorAll(".left-panel__nav-item.--with-accordion");
+
+        items.forEach(item => {
+          const title = item.querySelector(".left-panel__nav-title.--with-chevron");
+          title.onclick = () => item.classList.toggle("open");
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+
+      try {
+        const wrapper = document.querySelector(".platform-header__languages");
+        const selected = document.querySelector(".platform-header__languages-selected");
+        const items = document.querySelectorAll(".platform-header__languages-all li");
+
+        selected.onclick = () => wrapper.classList.toggle("opened");
+
+        items.forEach(item => {
+          item.onclick = () => {
+            [selected.textContent, item.textContent] = [item.textContent, selected.textContent];
+            wrapper.classList.remove("opened");
+          }
+        })
+      } catch (error) {
+
+      }
+    </script>
+  </body>
+
+</html>

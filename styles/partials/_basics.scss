@@ -64,3 +64,9 @@ textarea {
   min-height: 160px;
   max-height: 300px;
 }
+
+hidden-content {
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,154 @@
+.platform-personal {
+
+  &__edit-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 143%;
+    color: #6941c6;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &.--disabled {
+      opacity: 0.2;
+    }
+  }
+
+  &__content {
+    border-top: 1px solid #e4e7ec;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4e7ec;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    max-width: 820px;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 143%;
+    color: #344054;
+
+    flex: 0 1 300px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    flex: 0 1 500px;
+
+    >* {
+      flex: 1;
+    }
+
+    &.--tags>* {
+      flex: unset;
+    }
+  }
+
+  &__input-with-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    span {
+      color: #344054;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    margin-top: 16px;
+  }
+}
+
+.platform-personal {
+
+  .input-email,
+  .input-tel,
+  .input-time {
+    position: relative;
+
+    input {
+      padding-left: 14px + 20px + 8px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: absolute;
+      top: 50%;
+      left: 14px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .input-email::before {
+    background-image: url("/images/input-mail-icon.svg");
+  }
+
+  .input-tel::before {
+    background-image: url("/images/input-tel-icon.svg");
+  }
+
+  .input-time::before {
+    background-image: url("/images/input-time-icon.svg");
+  }
+
+  input::-webkit-calendar-picker-indicator {
+    background: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  input,
+  textarea {
+    color: #101828;
+  }
+
+  input[readonly],
+  textarea[readonly] {
+    color: #667085;
+  }
+}

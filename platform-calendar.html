@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tailwind-out.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <div class="wrapper panel-grid-wrapper">
+      <aside class="left-panel">
+        <div class="left-panel__logo">
+          <img src="./images/platform-logo.svg" alt="">
+        </div>
+
+        <ul class="left-panel__nav">
+          <li class="left-panel__nav-item --with-accordion open">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-1.svg" alt="">
+              <span>Мій профіль</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title selected">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-2.svg" alt="">
+              <span>Курси</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-3.svg" alt="">
+              <span>Задачі</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-4.svg" alt="">
+              <span>Календар</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-5.svg" alt="">
+              <span>Уроки</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-6.svg" alt="">
+              <span>Групи</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-7.svg" alt="">
+              <span>Викладачі</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="platform-header">
+        <div class="platform-header__row">
+          <div class="platform-header__left">
+            <user-name>
+              Привіт, <span>user_login</span>
+            </user-name>
+
+            <span class="tag tag--blue">
+              <span>Студент</span>
+            </span>
+          </div>
+
+          <!--  -->
+
+          <div class="platform-header__right">
+            <div class="platform-header__languages">
+              <div class="platform-header__languages-selected">
+                <span>Укр</span>
+              </div>
+
+              <div class="platform-header__languages-all">
+                <hidden-content>
+                  <ul>
+                    <li>Рус</li>
+                    <li>Англ</li>
+                  </ul>
+                </hidden-content>
+              </div>
+            </div>
+
+            <div class="platform-header__exit">
+              <img src="./images/platform-log-out.svg" alt="">
+              <span>Вихід</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="platform-main">
+        <section class="platform-calendar">
+          <div class="platform-main__title --with-border-bottom">
+            <h2>Календар</h2>
+
+            <div class="flex gap-2">
+              <button calendar-tabs class="button button-outline">День</button>
+              <button calendar-tabs class="button button-outline --disabled">Тиждень</button>
+              <button calendar-tabs class="button button-outline --disabled">Місяць</button>
+            </div>
+
+            <button class="button button-outline">
+              <img src="./images/button-filter-lines.svg" alt="">
+              <span>Фільтр</span>
+            </button>
+          </div>
+
+          <div class="platform-calendar__table --day" style="display: block;">
+            <div class="platform-calendar__title">
+              <div class="flex items-center gap-4">
+                <table-date>02 вересня 2024</table-date>
+
+                <div class="flex gap-2">
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-left.svg" alt="">
+                  </button>
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-right.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <button class="button button-blue">
+                <img src="./images/platform-plus.svg" alt="">
+                <span>Додати подію</span>
+              </button>
+            </div>
+
+            <div class="platform-calendar-table">
+              <table>
+                <colgroup>
+                  <col style="width: 50px;">
+                  <col>
+                </colgroup>
+                <tbody>
+
+                  <tr>
+                    <td>
+                      <table-time>07:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"> </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>08:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #ffe4e8;">
+                          <div class="platform-calendar-table__item-title">
+                            <item-title>Англійська мова, 1 урок</item-title>
+                            <item-time style="margin-left: auto;">08:00-8.50</item-time>
+                          </div>
+                          <div class="platform-calendar-table__item-content">
+                            <span>Вступний урок з англійської мови. Знайомство, план роботи.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>09:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"> </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>10:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <div class="platform-calendar-table__item-title">
+                            <item-title>Пройти тест для визначення рівня</item-title>
+                            <item-time style="margin-left: auto;">10:00-10.30</item-time>
+                          </div>
+                        </div>
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <div class="platform-calendar-table__item-title">
+                            <item-title>Зробити ДЗ №1</item-title>
+                            <item-time style="margin-left: auto;">10:30-11.00</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>11:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>12:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <div class="platform-calendar-table__item-title">
+                            <item-title>Індивідуальний урок з математики</item-title>
+                            <item-time style="margin-left: auto;">12:00-13.30</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>13:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf; max-height: 30px;"> </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>14:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>15:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>16:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>17:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>18:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>19:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>20:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="platform-calendar__table --week" style="display: none;">
+            <div class="platform-calendar__title">
+              <div class="flex items-center gap-4">
+                <table-date>02-08 вересня 2024</table-date>
+
+                <div class="flex gap-2">
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-left.svg" alt="">
+                  </button>
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-right.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <button class="button button-blue">
+                <img src="./images/platform-plus.svg" alt="">
+                <span>Додати подію</span>
+              </button>
+            </div>
+
+            <div class="platform-calendar-table">
+              <table>
+                <colgroup>
+                  <col style="width: 50px;">
+                  <col style="width: calc((100% - 50px) / 7);"> <!-- 1 -->
+                  <col style="width: calc((100% - 50px) / 7);"> <!-- 2 -->
+                  <col style="width: calc((100% - 50px) / 7);"> <!-- 3 -->
+                  <col style="width: calc((100% - 50px) / 7); background: #f9f5ff;"> <!-- 4 -->
+                  <col style="width: calc((100% - 50px) / 7);"> <!-- 5 -->
+                  <col style="width: calc((100% - 50px) / 7); background: #f2f4f7;"> <!-- 6 -->
+                  <col style="width: calc((100% - 50px) / 7); background: #f2f4f7;"> <!-- 7 -->
+                </colgroup>
+
+                <thead>
+                  <th></th>
+                  <th>Пн</th>
+                  <th>Вт</th>
+                  <th>Ср</th>
+                  <th>Чт</th>
+                  <th>Пт</th>
+                  <th>Сб</th>
+                  <th>Вс</th>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <table-time>07:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #ffe4e8;">
+                          <item-title>Англійська мова, 1 урок</item-title>
+                          <item-time style="margin-top: auto;">08:00-8.50</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>08:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>09:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Team Call</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Team Call</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Team Call</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Team Call</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>10:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Пройти тест для визначення рівня</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Зробити ДЗ №1</item-title>
+                          <item-time style="margin-top: auto;">09:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>11:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>12:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf;">
+                          <item-title>Індивідуальний урок з математики</item-title>
+                          <item-time style="margin-top: auto;">12:00-13.30</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #e0eaff;">
+                          <item-title>Вебінар</item-title>
+                          <item-time style="margin-top: auto;">12:00-14:00</item-time>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>13:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #d1fadf; max-height: 30px;"> </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__item" style="background: #e0eaff;"></div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>14:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <table-time>15:00</table-time>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data"></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="platform-calendar__table --month" style="display: none;">
+            <div class="platform-calendar__title">
+              <div class="flex items-center gap-4">
+                <table-date>Вересень 2024</table-date>
+
+                <div class="flex gap-2">
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-left.svg" alt="">
+                  </button>
+                  <button class="button button-outline">
+                    <img src="./images/platform-arrow-right.svg" alt="">
+                  </button>
+                </div>
+              </div>
+
+              <button class="button button-blue">
+                <img src="./images/platform-plus.svg" alt="">
+                <span>Додати подію</span>
+              </button>
+            </div>
+
+            <div class="platform-calendar-table">
+              <table>
+                <colgroup>
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 1 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 2 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 3 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 4 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 5 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 6 -->
+                  <col style="width: calc(100% / 7); min-height: 130px;"> <!-- 7 -->
+                </colgroup>
+
+                <thead>
+                  <th>Пн</th>
+                  <th>Вт</th>
+                  <th>Ср</th>
+                  <th>Чт</th>
+                  <th>Пт</th>
+                  <th>Сб</th>
+                  <th>Вс</th>
+                </thead>
+
+                <tbody>
+
+                  <tr>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">26</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">27</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">28</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">29</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">30</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">31</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">01</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">02</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #fecdd6;"></item-day-circle>
+                            <item-title style="color: #89123e;">Англійська мова, 1 урок</item-title>
+                            <item-time>08:00-8.50</item-time>
+                            <item-day-more>+2 події</item-day-more>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">03</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #a6f4c5;"></item-day-circle>
+                            <item-title style="color: #054f31;">Team Call</item-title>
+                            <item-time>09:00</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">04</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #a6f4c5;"></item-day-circle>
+                            <item-title style="color: #054f31;">Team Call</item-title>
+                            <item-time>09:00</item-time>
+                            <item-day-more>+1 події</item-day-more>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td style="background: #f9f5ff;">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">05</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #a6f4c5;"></item-day-circle>
+                            <item-title style="color: #054f31;">Team Call</item-title>
+                            <item-time>09:00</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">06</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #a6f4c5;"></item-day-circle>
+                            <item-title style="color: #054f31;">Team Call</item-title>
+                            <item-time>09:00</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">07</div>
+
+                          <div class="platform-calendar-table__day-item-content">
+                            <item-day-circle style="background: #c7d7fe;"></item-day-circle>
+                            <item-title style="color: #2d3282;">Вебінар</item-title>
+                            <item-time>12:00-14.00</item-time>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">08</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">09</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">10</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">11</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">12</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">13</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">14</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">15</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">16</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">17</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">18</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">19</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">20</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">21</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">22</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">23</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">24</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">25</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">26</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">27</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">28</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">29</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!--  -->
+
+                  <tr>
+                    <td>
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">30</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">01</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">02</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">03</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">04</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">05</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="--old-day">
+                      <div class="platform-calendar-table__data">
+                        <div class="platform-calendar-table__day-item">
+                          <div class="platform-calendar-table__day-item-figure">06</div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src=""></script>
+
+    <script>
+      try {
+        const items = document.querySelectorAll(".left-panel__nav-item.--with-accordion");
+
+        items.forEach(item => {
+          const title = item.querySelector(".left-panel__nav-title.--with-chevron");
+          title.onclick = () => item.classList.toggle("open");
+        })
+      } catch (error) {
+        console.warn(error)
+      }
+
+      try {
+        const wrapper = document.querySelector(".platform-header__languages");
+        const selected = document.querySelector(".platform-header__languages-selected");
+        const items = document.querySelectorAll(".platform-header__languages-all li");
+
+        selected.onclick = () => wrapper.classList.toggle("opened");
+
+        items.forEach(item => {
+          item.onclick = () => {
+            [selected.textContent, item.textContent] = [item.textContent, selected.textContent];
+            wrapper.classList.remove("opened");
+          }
+        })
+      } catch (error) {
+
+      }
+    </script>
+
+    <script>
+      try {
+        const buttons = document.querySelectorAll("[calendar-tabs]");
+        const tables = document.querySelectorAll(".platform-calendar__table");
+
+        const initAll = () => {
+          if (buttons && tables) {
+            buttons.forEach(item => item.classList.add("--disabled"));
+            tables.forEach(item => item.style.display = "none");
+          }
+        }
+
+        if (buttons && tables) {
+          buttons.forEach((item, index) => {
+            item.onclick = () => {
+              initAll();
+              buttons[index].classList.remove("--disabled");
+              tables[index].style.display = "block";
+            }
+          })
+        }
+      } catch (error) {
+
+      }
+    </script>
+  </body>
+
+</html>

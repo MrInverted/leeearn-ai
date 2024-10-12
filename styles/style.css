@@ -257,7 +257,9 @@ hidden-content {
 .button img {
   transition: 0.3s;
 }
-.button[disabled] {
+
+.button[disabled],
+.button.--disabled {
   cursor: unset;
   opacity: 0.4;
 }
@@ -1455,7 +1457,6 @@ hidden-content {
 }
 
 .platform-header {
-  background-color: #fcfcfd;
   padding: 32px 32px 20px 32px;
 }
 .platform-header__row {
@@ -1569,6 +1570,10 @@ hidden-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.platform-main__title.--with-border-bottom {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e4e7ec;
 }
 .platform-main__title h2 {
   font-weight: 600;
@@ -2140,4 +2145,134 @@ hidden-content {
 .platform-tasks-item__add-new-item span {
   display: block;
   margin-bottom: 2px;
+}
+
+.platform-calendar__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e7ec;
+  padding: 16px;
+  background: #fff;
+}
+.platform-calendar table-date {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 133%;
+  color: #101828;
+}
+.platform-calendar table-time {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #101828;
+  text-align: center;
+}
+.platform-calendar item-title {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #89123e;
+}
+.platform-calendar item-time {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #89123e;
+}
+.platform-calendar item-day-more {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #7f56d9;
+}
+.platform-calendar item-day-circle {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+.platform-calendar table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+.platform-calendar td {
+  border: 1px solid #d0d5dd;
+  height: 100%;
+}
+.platform-calendar tr {
+  vertical-align: top;
+  height: 100%;
+}
+.platform-calendar th {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #101828;
+  padding: 4px 0;
+}
+.platform-calendar .--day td:first-child,
+.platform-calendar .--week td:first-child {
+  border: unset;
+}
+.platform-calendar td.--old-day {
+  background: #f2f4f7;
+}
+.platform-calendar td.--old-day > * {
+  opacity: 0.5;
+}
+
+.platform-calendar-table__data {
+  width: 100%;
+  height: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 2px;
+}
+.platform-calendar-table__data > * {
+  flex: 1;
+}
+.platform-calendar-table__item {
+  padding: 4px 8px;
+  border-radius: 3px;
+  border: 1px solid #fecdd6;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+}
+.platform-calendar-table__item-title {
+  display: flex;
+  align-items: center;
+}
+.platform-calendar-table__item-content {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #89123e;
+}
+.platform-calendar-table__day-item {
+  padding: 4px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.platform-calendar-table__day-item-figure {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #101828;
+  padding: 5px;
+}
+.platform-calendar-table__day-item-content {
+  margin-top: auto;
 }

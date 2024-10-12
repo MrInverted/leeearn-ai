@@ -14,11 +14,12 @@
   img {
     transition: 0.3s;
   }
+}
 
-  &[disabled] {
-    cursor: unset;
-    opacity: 0.4;
-  }
+.button[disabled],
+.button.--disabled {
+  cursor: unset;
+  opacity: 0.4;
 }
 
 .button-play {

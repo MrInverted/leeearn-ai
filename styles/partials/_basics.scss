@@ -36,7 +36,8 @@ section {
 }
 
 input:not([type='checkbox']):not([type='radio']),
-textarea {
+textarea,
+select {
   display: block;
   width: 100%;
 

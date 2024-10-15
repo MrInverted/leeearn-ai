@@ -96,6 +96,16 @@
   }
 }
 
+.button-red {
+  color: white;
+  background-color: #d92d20;
+
+  &:not([disabled]):hover {
+    opacity: 0.6;
+  }
+}
+
+
 .tag {
   padding: 2px 8px;
   border-radius: 100px;

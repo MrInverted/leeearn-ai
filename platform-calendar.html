@@ -1200,63 +1200,7 @@
       </main>
     </div>
 
-    <script src=""></script>
-
-    <script>
-      try {
-        const items = document.querySelectorAll(".left-panel__nav-item.--with-accordion");
-
-        items.forEach(item => {
-          const title = item.querySelector(".left-panel__nav-title.--with-chevron");
-          title.onclick = () => item.classList.toggle("open");
-        })
-      } catch (error) {
-        console.warn(error)
-      }
-
-      try {
-        const wrapper = document.querySelector(".platform-header__languages");
-        const selected = document.querySelector(".platform-header__languages-selected");
-        const items = document.querySelectorAll(".platform-header__languages-all li");
-
-        selected.onclick = () => wrapper.classList.toggle("opened");
-
-        items.forEach(item => {
-          item.onclick = () => {
-            [selected.textContent, item.textContent] = [item.textContent, selected.textContent];
-            wrapper.classList.remove("opened");
-          }
-        })
-      } catch (error) {
-
-      }
-    </script>
-
-    <script>
-      try {
-        const buttons = document.querySelectorAll("[calendar-tabs]");
-        const tables = document.querySelectorAll(".platform-calendar__table");
-
-        const initAll = () => {
-          if (buttons && tables) {
-            buttons.forEach(item => item.classList.add("--disabled"));
-            tables.forEach(item => item.style.display = "none");
-          }
-        }
-
-        if (buttons && tables) {
-          buttons.forEach((item, index) => {
-            item.onclick = () => {
-              initAll();
-              buttons[index].classList.remove("--disabled");
-              tables[index].style.display = "block";
-            }
-          })
-        }
-      } catch (error) {
-
-      }
-    </script>
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 
 </html>

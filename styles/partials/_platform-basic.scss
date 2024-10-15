@@ -75,3 +75,59 @@
     font-size: 14px;
   }
 }
+
+
+.wrapper .input-email,
+.wrapper .input-tel,
+.wrapper .input-time,
+.wrapper .input-search {
+  position: relative;
+
+  input {
+    padding-left: 14px + 20px + 8px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    transform: translateY(-50%);
+  }
+}
+
+.input-email::before {
+  background-image: url("/images/input-mail-icon.svg");
+}
+
+.input-tel::before {
+  background-image: url("/images/input-tel-icon.svg");
+}
+
+.input-time::before {
+  background-image: url("/images/input-time-icon.svg");
+}
+
+.input-search::before {
+  background-image: url("/images/search.svg");
+}
+
+.input {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  color: #344054;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

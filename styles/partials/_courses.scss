@@ -4,16 +4,6 @@
     max-width: 1060px + 64px;
     padding: 0 32px;
     margin: 0 auto;
-
-    all-courses,
-    my-courses {
-      display: none;
-    }
-
-    all-courses.active,
-    my-courses.active {
-      display: block;
-    }
   }
 
   &__tabs {
@@ -79,5 +69,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+}
+
+.courses-content-panel {
+  display: none;
+
+  &.active {
+    display: block;
   }
 }

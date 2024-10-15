@@ -223,6 +223,7 @@ hidden-content {
   color: #6941C6;
 }
 .back-button img {
+  display: inline-block;
   vertical-align: sub;
 }
 .back-button:hover {
@@ -1016,14 +1017,6 @@ hidden-content {
   padding: 0 32px;
   margin: 0 auto;
 }
-.courses__content all-courses,
-.courses__content my-courses {
-  display: none;
-}
-.courses__content all-courses.active,
-.courses__content my-courses.active {
-  display: block;
-}
 .courses__tabs {
   display: flex;
   gap: 16px;
@@ -1079,6 +1072,13 @@ hidden-content {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.courses-content-panel {
+  display: none;
+}
+.courses-content-panel.active {
+  display: block;
 }
 
 .courses-arrangers {

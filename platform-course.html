@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tailwind-out.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <div class="wrapper panel-grid-wrapper">
+      <aside class="left-panel">
+        <div class="left-panel__logo">
+          <img src="./images/platform-logo.svg" alt="">
+        </div>
+
+        <ul class="left-panel__nav">
+          <li class="left-panel__nav-item --with-accordion open">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-1.svg" alt="">
+              <span>Мій профіль</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title selected">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-2.svg" alt="">
+              <span>Курси</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-3.svg" alt="">
+              <span>Задачі</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-4.svg" alt="">
+              <span>Календар</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-5.svg" alt="">
+              <span>Уроки</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-6.svg" alt="">
+              <span>Групи</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-7.svg" alt="">
+              <span>Викладачі</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="platform-header">
+        <div class="platform-header__row">
+          <div class="platform-header__left">
+            <user-name>
+              Привіт, <span>user_login</span>
+            </user-name>
+
+            <span class="tag tag--blue">
+              <span>Студент</span>
+            </span>
+          </div>
+
+          <!--  -->
+
+          <div class="platform-header__right">
+            <div class="platform-header__languages">
+              <div class="platform-header__languages-selected">
+                <span>Укр</span>
+              </div>
+
+              <div class="platform-header__languages-all">
+                <hidden-content>
+                  <ul>
+                    <li>Рус</li>
+                    <li>Англ</li>
+                  </ul>
+                </hidden-content>
+              </div>
+            </div>
+
+            <div class="platform-header__exit">
+              <img src="./images/platform-log-out.svg" alt="">
+              <span>Вихід</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="platform-main">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="">Усі курси</a></li>
+            <li><a href="">Міні-курс “Знайомство з Roblox”</a></li>
+          </ul>
+        </div>
+
+        <div class="course__grid">
+          <div class="course__main">
+            <div class="course-label">
+              <div class="course-label__image">
+                <img src="./images/pc.png" alt="">
+                <div class="course-label__title">
+                  <course-description>Міні-курс</course-description>
+                  <course-title>“Знайомство з Roblox”</course-title>
+                </div>
+                <img src="./images/cat.png" alt="">
+              </div>
+
+              <div class="course-label__progress">
+                <course-progress>
+                  <course-status>
+                    <span>Пройдено:</span>
+                    <course-lessons>1 з 5 уроків</course-lessons>
+                  </course-status>
+
+                  <course-progress-bar>
+                    <course-progress-fill style="width: 20%"></course-progress-fill>
+                  </course-progress-bar>
+
+                  <course-percent>20</course-percent>
+                </course-progress>
+
+                <!-- 
+                  <button class="button button-play">
+                  <img src="./images/play.svg" alt="">
+                  <span>Продовжити</span>
+                </button> 
+                -->
+              </div>
+            </div>
+
+            <div class="course-overall">
+              <div class="course-overall__left">
+                <span class="tag tag--blue">Програмування</span>
+              </div>
+              <div class="course-overall__right">
+                <course-info>
+                  <img src="./images/monitor.svg" alt="">
+                  <span>5 уроків</span>
+                </course-info>
+                <course-info>
+                  <img src="./images/clock.svg" alt="">
+                  <span>26 годин</span>
+                </course-info>
+              </div>
+            </div>
+
+            <div class="course-text">
+              <h1>Міні-курс “Знайомство з Roblox”</h1>
+              <course-beginning>Початок: 20 вересня 2024 • Ім’я Викладача</course-beginning>
+              <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+              <br>
+              <p>Усього за 5 уроків ти:</p>
+              <br>
+              <ul>
+                <li>дізнаєшся свій покроковий план на курс</li>
+                <li>познайомишся з інтерфейсом Roblox Studio</li>
+                <li>створиш власну гру</li>
+                <li>отримаєш сертифікат про проходження міні-курсу</li>
+              </ul>
+              <br>
+              <p>IT курси для дітей від OsviTech це весело, зрозуміло та цікаво. Якщо в тебе є бажання доєднатися до розробників ігор та запропонувати друзям власну гру, то приєднуйся до нас.</p>
+
+              <div class="course-buttons">
+                <button class="button button-course-continue">
+                  <span>Перейти до уроків</span>
+                  <img src="./images/arrow-right-white.svg" alt="">
+                </button>
+
+
+                <!-- If the course is not bought -->
+                <!-- <button class="button button-blue">
+                  <img src="./images/shopping-cart.svg" alt="">
+                  <span>Купити курс</span>
+                </button> -->
+                <!-- If the course is not bought -->
+              </div>
+            </div>
+          </div>
+
+
+
+          <aside class="course__aside">
+            <div class="course-accordion">
+              <p>Зміст курсу:</p>
+              <div class="course-accordion__column">
+                <article class="opened">
+                  <accordion-title>
+                    <p>Урок 1</p>
+                    <span class="tag tag--passed">Пройдено</span>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article class="test">
+                  <accordion-title>
+                    <p>Тест 1</p>
+                    <span class="tag tag--passed">Пройдено</span>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+
+                        <a href="">
+                          <img src="./images/rocket-for-accordion.svg" alt="">
+                          <span>Пройти тест</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article>
+                  <accordion-title>
+                    <p>Урок 2</p>
+                    <span class=" tag tag--in-process">В процесі</span>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article>
+                  <accordion-title>
+                    <p>Урок 3</p>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article>
+                  <accordion-title>
+                    <p>Урок 4</p>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article>
+                  <accordion-title>
+                    <p>Урок 5</p>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article>
+                  <accordion-title>
+                    <p>Бонусний урок</p>
+                    <span class="tag tag--new">Новий</span>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Знайомство з Roblox</h2>
+                        <p>Roblox Studio - це офіційний додаток для створення ігор онлайн. </p>
+                        <p>На цьому уроці ти:</p>
+                        <ul>
+                          <li>дізнаєтесь свій покроковий план на курс </li>
+                          <li>познайомитесь з інтерфейсом Roblox Studio</li>
+                          <li>створите свого першого персонажа</li>
+                          <li>отримаєте завдання на самостійне виконання</li>
+                        </ul>
+                        <a href="">
+                          <img src="./images/play-circle.svg" alt="">
+                          <span>Переглянути урок</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+
+                <article class="test">
+                  <accordion-title>
+                    <p>Фінальний тест по курсу</p>
+                    <span class="tag tag--passed">Пройдено</span>
+                    <img src="./images/arrow-down.svg" alt="">
+                  </accordion-title>
+
+                  <accordion-body-wrapper>
+                    <hidden-content>
+                      <accordion-body>
+                        <h2>Урок 1. Знайомство з Roblox</h2>
+
+                        <a href="">
+                          <img src="./images/rocket-for-accordion.svg" alt="">
+                          <span>Пройти тест</span>
+                        </a>
+                      </accordion-body>
+                    </hidden-content>
+                  </accordion-body-wrapper>
+                </article>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+
+</html>

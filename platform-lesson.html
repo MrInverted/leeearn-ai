@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tailwind-out.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <div class="wrapper panel-grid-wrapper">
+      <aside class="left-panel">
+        <div class="left-panel__logo">
+          <img src="./images/platform-logo.svg" alt="">
+        </div>
+
+        <ul class="left-panel__nav">
+          <li class="left-panel__nav-item --with-accordion open">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-1.svg" alt="">
+              <span>Мій профіль</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title selected">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-2.svg" alt="">
+              <span>Курси</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-3.svg" alt="">
+              <span>Задачі</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-4.svg" alt="">
+              <span>Календар</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-5.svg" alt="">
+              <span>Уроки</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-6.svg" alt="">
+              <span>Групи</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-7.svg" alt="">
+              <span>Викладачі</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="platform-header">
+        <div class="platform-header__row">
+          <div class="platform-header__left">
+            <user-name>
+              Привіт, <span>user_login</span>
+            </user-name>
+
+            <span class="tag tag--blue">
+              <span>Студент</span>
+            </span>
+          </div>
+
+          <!--  -->
+
+          <div class="platform-header__right">
+            <div class="platform-header__languages">
+              <div class="platform-header__languages-selected">
+                <span>Укр</span>
+              </div>
+
+              <div class="platform-header__languages-all">
+                <hidden-content>
+                  <ul>
+                    <li>Рус</li>
+                    <li>Англ</li>
+                  </ul>
+                </hidden-content>
+              </div>
+            </div>
+
+            <div class="platform-header__exit">
+              <img src="./images/platform-log-out.svg" alt="">
+              <span>Вихід</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="platform-main">
+        <a class="back-button" href="">
+          <img src="./images/arrow-left-blue.svg" alt="">
+          <span>Про курс</span>
+        </a>
+
+        <div class="lesson__grid">
+          <div class="lesson__main">
+            <div class="lesson__video" data-videoid="NjDMzkRbSZI?si=IHF6FZ1dASNCU01J">
+              <img src="./images/lesson-1.jpg" alt="">
+            </div>
+
+            <div class="lesson__tabs">
+              <div class="lesson__tab active">Опис</div>
+              <div class="lesson__tab">Уроки</div>
+            </div>
+
+            <div class="course-text">
+              <h1>Урок 1. Знайомство з Roblox</h1>
+              <p>Цей курс підходить для тих, що фанатіє від онлайн ігор та проводить більшу частину ігрового часу в Roblox онлайн. Ми навчимо вас використовувати програмне забезпечення платформи для створення власних ігор.</p>
+              <br>
+              <p>Усього за 5 уроків ти:</p>
+              <br>
+              <ul>
+                <li>дізнаєшся свій покроковий план на курс</li>
+                <li>познайомишся з інтерфейсом Roblox Studio</li>
+                <li>створиш власну гру</li>
+                <li>отримаєш сертифікат про проходження міні-курсу</li>
+              </ul>
+
+              <div class="course-materials">
+                <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item">
+                  <img src="./images/file-upload-icon.svg" alt="">
+                  <div class="course-materials__text">
+                    <file-title>Homework.mp4</file-title>
+                    <file-size>16 MB</file-size>
+                  </div>
+                  <img class="course-materials__status --before" src="./images/file-upload-button-before.svg" alt="">
+                  <img class="course-materials__status --after" src="./images/file-upload-button-after.svg" alt="">
+                </a>
+
+                <a href="/some-path-to-file" download="desired-file-name.txt" class="course-materials__item downloaded">
+                  <img src="./images/file-upload-icon.svg" alt="">
+                  <div class="course-materials__text">
+                    <file-title>Workbook.pdf</file-title>
+                    <file-size>200 KB</file-size>
+                  </div>
+                  <img class="course-materials__status --before" src="./images/file-upload-button-before.svg" alt="">
+                  <img class="course-materials__status --after" src="./images/file-upload-button-after.svg" alt="">
+                </a>
+              </div>
+
+              <button class="button button-lesson-test">
+                <img src="./images/rocket.svg" alt="">
+                <span>Пройти тест</span>
+              </button>
+
+              <div class="course-buttons">
+                <button class="button button-lesson-prev" disabled>
+                  <img src="./images/arrow-left-black.svg" alt="">
+                  <span>Попередній урок</span>
+                </button>
+
+                <button class="button button-lesson-next">
+                  <span>Наступний урок</span>
+                  <img src="./images/arrow-right-white.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="lesson__aside">
+            <div class="lesson__accordion">
+              <a href="">
+                <article class="current">
+                  <div class="lesson__accordion-row">
+                    <p>Урок 1</p>
+                    <span class="tag tag--passed">Пройдено</span>
+                  </div>
+
+                  <h2> Знайомство з Roblox</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article class="test">
+                  <div class="lesson__accordion-row">
+                    <p>Тест 1</p>
+                    <span class="tag tag--passed">Пройдено</span>
+                  </div>
+
+                  <h2> Знайомство з Roblox</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article>
+                  <div class="lesson__accordion-row">
+                    <p>Урок 2</p>
+                    <span class="tag tag--in-process">В процесі</span>
+                  </div>
+
+                  <h2>Назва другого уроку в два рядки для наглядності розташування тексту</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article>
+                  <div class="lesson__accordion-row">
+                    <p>Урок 3</p>
+                  </div>
+
+                  <h2>Назва третього уроку</h2>
+                </article>
+              </a>
+
+
+              <a href="">
+                <article>
+                  <div class="lesson__accordion-row">
+                    <p>Урок 4</p>
+                  </div>
+
+                  <h2>Назва четвертого уроку</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article>
+                  <div class="lesson__accordion-row">
+                    <p>Урок 5</p>
+                  </div>
+
+                  <h2>Назва п’ятого уроку</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article>
+                  <div class="lesson__accordion-row">
+                    <p>Бонусний</p>
+                    <span class="tag tag--new">Новий</span>
+                  </div>
+
+                  <h2>Бонусний урок</h2>
+                </article>
+              </a>
+
+              <a href="">
+                <article class="test">
+                  <div class="lesson__accordion-row">
+                    <p>Фінальний тест</p>
+                  </div>
+
+                  <h2>Фінальний тест по курсу</h2>
+                </article>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+
+</html>

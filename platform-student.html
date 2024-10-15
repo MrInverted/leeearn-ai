@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/tailwind-out.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <div class="wrapper panel-grid-wrapper">
+      <aside class="left-panel">
+        <div class="left-panel__logo">
+          <img src="./images/platform-logo.svg" alt="">
+        </div>
+
+        <ul class="left-panel__nav">
+          <li class="left-panel__nav-item --with-accordion open">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-1.svg" alt="">
+              <span>Мій профіль</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title selected">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-2.svg" alt="">
+              <span>Курси</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-3.svg" alt="">
+              <span>Задачі</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item">
+            <div class="left-panel__nav-title">
+              <img src="./images/platform-aside-4.svg" alt="">
+              <span>Календар</span>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-5.svg" alt="">
+              <span>Уроки</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-6.svg" alt="">
+              <span>Групи</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="left-panel__nav-item --with-accordion">
+            <div class="left-panel__nav-title --with-chevron">
+              <img src="./images/platform-aside-7.svg" alt="">
+              <span>Викладачі</span>
+            </div>
+
+            <div class="left-panel__nav-accordion">
+              <hidden-content>
+                <ul>
+                  <li class="left-panel__nav-title">
+                    <span>Огляд</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Сповіщення</span>
+                  </li>
+                  <li class="left-panel__nav-title">
+                    <span>Особисті дані</span>
+                  </li>
+                </ul>
+              </hidden-content>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <header class="platform-header">
+        <div class="platform-header__row">
+          <div class="platform-header__left">
+            <user-name>
+              Привіт, <span>user_login</span>
+            </user-name>
+
+            <span class="tag tag--blue">
+              <span>Студент</span>
+            </span>
+          </div>
+
+          <!--  -->
+
+          <div class="platform-header__right">
+            <div class="platform-header__languages">
+              <div class="platform-header__languages-selected">
+                <span>Укр</span>
+              </div>
+
+              <div class="platform-header__languages-all">
+                <hidden-content>
+                  <ul>
+                    <li>Рус</li>
+                    <li>Англ</li>
+                  </ul>
+                </hidden-content>
+              </div>
+            </div>
+
+            <div class="platform-header__exit">
+              <img src="./images/platform-log-out.svg" alt="">
+              <span>Вихід</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="platform-main">
+        <section class="platform-personal">
+          <div class="platform-main__title">
+            <h2>Особисті дані</h2>
+
+            <!-- On edit-button click remove all the 'readonly' attributes on inputs -->
+
+            <button class="platform-personal__edit-button --disabled">
+              <img src="./images/platform-edit-pencil.svg" alt="">
+              <span>Редагувати</span>
+            </button>
+          </div>
+
+          <div class="platform-student-tabs">
+            <ul>
+              <li class="active">Подробиці</li>
+              <li>Коментарі</li>
+              <li>Продажі</li>
+              <li>Групи</li>
+              <li>Задачі</li>
+            </ul>
+          </div>
+
+          <platform-student-information class="pst" style="display: block;">
+            <div class="platform-personal__content">
+              <div class="platform-personal__block">
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Джерело</div>
+                  <div class="platform-personal__input">
+                    <input type="text" placeholder="" name="" value="Test" readonly>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Ім’я</div>
+                  <div class="platform-personal__input">
+                    <input type="text" placeholder="" name="" value="Иннокентий" readonly>
+                    <input type="text" placeholder="" name="" value="Тестович" readonly>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Електронна пошта</div>
+                  <div class="platform-personal__input">
+                    <label class="input-email">
+                      <input type="email" placeholder="" name="" value="student@gmail.com" readonly>
+                    </label>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Номер телефону</div>
+                  <div class="platform-personal__input">
+                    <label class="input-tel">
+                      <input type="tel" placeholder="" name="" value="+38 (066) 999 88 77" readonly>
+                    </label>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Стать</div>
+                  <div class="platform-personal__input">
+                    <select disabled>
+                      <option value="" selected>Чоловіча</option>
+                      <option value="">Жіноча</option>
+                      <option value="">Небінарний</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform-personal__block">
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Доступний</div>
+                  <div class="platform-personal__input">
+                    <div class="platform-personal__input-with-text-wrapper" style="max-width: 110px;">
+                      <span>з:</span>
+                      <label class="input-time">
+                        <input type="time" placeholder="" name="" value="00:00" readonly>
+                      </label>
+                    </div>
+                    <div class="platform-personal__input-with-text-wrapper" style="max-width: 110px;">
+                      <span>до:</span>
+                      <label class="input-time">
+                        <input type="time" placeholder="" name="" value="00:00" readonly>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Статус</div>
+                  <div class="platform-personal__input">
+                    <select disabled>
+                      <option value="" selected>Холодний</option>
+                      <option value="">Теплий</option>
+                      <option value="">Гарячий</option>
+                    </select>
+                    <select disabled>
+                      <option value="" selected>Блакитний колір</option>
+                      <option value="">Червоний колір</option>
+                      <option value="">Жовтий колір</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Сума</div>
+                  <div class="platform-personal__input">
+                    <input type="number" placeholder="" name="" value="0" readonly>
+                  </div>
+                </div>
+
+                <!--  -->
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Менеджер</div>
+                  <div class="platform-personal__input">
+                    <input type="text" placeholder="" name="" value="Иннокентий" readonly>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform-personal__block">
+                <div class="platform-personal__item">
+                  <div class="platform-personal__title">Теги</div>
+                  <div class="platform-personal__input --tags">
+                    <span class="tag tag--blue">Студент</span>
+                    <span class="tag tag--red">Студент</span>
+                    <span class="tag tag--school">Студент</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="platform-personal__buttons">
+              <button class="button button-outline">Відмінити</button>
+              <button class="button button-blue">Зберегти</button>
+            </div>
+          </platform-student-information>
+
+          <platform-student-comments class="pst" style="display: none;">
+            <div class="platform-personal__content">
+              <div class="platform-personal__block">
+                <div class="platform-personal__item">
+                  <div class="platform-personal__input platform-student-comment">
+                    <label>
+                      <input type="text" placeholder="" name="" value="Коментар перший" readonly>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="platform-personal__item">
+                  <div class="platform-personal__input platform-student-comment --editing">
+                    <label>
+                      <input type="text" placeholder="Введіть текст" name="" value="Коментар перший, редагується прямо зараз">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="platform-personal__buttons">
+              <button class="button button-outline">Відмінити</button>
+              <button class="button button-blue">Зберегти</button>
+            </div>
+          </platform-student-comments>
+        </section>
+      </main>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+
+</html>

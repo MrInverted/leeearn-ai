@@ -8,3 +8,14 @@ try {
 } catch (error) {
   console.warn(error)
 }
+
+try {
+  const trigger = document.querySelector(".left-panel__trigger");
+  const panel = document.querySelector(".left-panel");
+
+  if (trigger) trigger.onclick = () => {
+    panel.classList.toggle("active");
+  }
+} catch (error) {
+  console.warn(error)
+}

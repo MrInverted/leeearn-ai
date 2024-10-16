@@ -37,7 +37,7 @@
 .platform-leads-table {
   border: 1px solid #e4e7ec;
   border-radius: 8px;
-  overflow: hidden;
+  width: 100%;
 
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.06), 0 1px 3px 0 rgba(16, 24, 40, 0.1);
   background: #fff;
@@ -100,8 +100,8 @@
   }
 
   table {
-    width: 100%;
-    table-layout: fixed;
+    width: auto;
+    min-width: 100%;
     border-collapse: collapse;
   }
 
@@ -110,12 +110,27 @@
     background: #f9fafb;
     border-top: 1px solid #e4e7ec;
     border-bottom: 1px solid #e4e7ec;
+
+    @media (max-width: 1100px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 
   td {
     padding: 26px 24px;
     border-top: 1px solid #e4e7ec;
     border-bottom: 1px solid #e4e7ec;
+
+    @media (max-width: 1100px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  th,
+  td {
+    white-space: nowrap
   }
 
   tbody tr:hover {
@@ -210,7 +225,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 10;
   overflow: auto;
 
   backdrop-filter: blur(16px);

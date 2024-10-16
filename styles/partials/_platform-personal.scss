@@ -51,6 +51,10 @@
     color: #344054;
 
     flex: 0 1 300px;
+
+    @media (max-width: 600px) {
+      flex: 0 1 200px;
+    }
   }
 
   &__input {
@@ -62,6 +66,10 @@
 
     >* {
       flex: 1;
+    }
+
+    &.--tags {
+      flex-wrap: wrap;
     }
 
     &.--tags>* {
